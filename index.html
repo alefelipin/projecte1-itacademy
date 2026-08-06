@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITAlumni | Comunitat d'exalumnes IT Academy</title>
+    <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="./src/css/main.css">
+    
 </head>
 <body>
 
@@ -31,19 +33,21 @@
   <main class="main">
 
     <section class="hero">
-
       <div class="hero-container mobile-only">
         <div>Logo</div>
         <p>Connectant i empoderant a la nostra comunitat global d'alumnes</p>
         <button>Uneix-te</button>
       </div>
-
       <div class="hero-container desktop-only">
         <h1>Benvinguts, alumni</h1>
         <p>Connectant i empoderant a la nostra comunitat global d'alumnes</p>
         <button>Uneix-te</button>
         <button>Mira que fem</button>
         <img>
+      </div>
+    </section>
+    <section class="benefits desktop-only">
+      <div>
         <h2>Què guanyes en formar-ne part?</h2>
         <p>
           Comparteix i no perdis el contacte: Puja els<br>
@@ -65,32 +69,73 @@
         </p>
         <button>Apunta't ja</button>
       </div>
-
+    </section>
+    <section class="social-proof desktop-only">
+      <h3>"T'ensenyem el que opinen els nostres súper-usuaris!"</h3>
+      <p>
+        "Gràcies a IT Alumni vaig aconseguir la feina<br>
+        dels meus somnis en el món tech amb el seu<br>
+        increïble programa de mentoria."
+      </p>
+      <p>
+        "La meva xarxa d'aquesta comunitat ha estat<br>
+        clau: va revolucionar la meva carrera i em va<br>
+        mostrar camins insospitats."
+      </p>
+      <p>
+        "IT Alumni em va donar les eines i l'autoestima<br>
+        per fer realitat el meu somni d'emprendre."
+      </p>
+      <button></button>
+      <button></button>
     </section>
   </main>
 
   <footer class="footer desktop-only">
-
-    <h3>"T'ensenyem el que opinen els nostres súper-usuaris!"</h3>
-    <p>
-      "Gràcies a IT Alumni vaig aconseguir la feina<br>
-      dels meus somnis en el món tech amb el seu<br>
-      increïble programa de mentoria."
-    </p>
-    <p>
-      "La meva xarxa d'aquesta comunitat ha estat<br>
-      clau: va revolucionar la meva carrera i em va<br>
-      mostrar camins insospitats."
-    </p>
-    <p>
-      "IT Alumni em va donar les eines i l'autoestima<br>
-      per fer realitat el meu somni d'emprendre."
-    </p>
-    <button></button>
-    <button></button>
-  </footer>
-
-
-    
+    <section class="footer-newsletter">
+      <h3>
+        "No et perdis res, subscriu-<br>
+        te!""
+      </h3>
+      <form class="newsletter-form">
+        <div class="form-items">
+          <span class="icon-email">✉</span>
+          <input type="email" placeholder="El teu email" required>
+        </div>
+        <button type="submit">Subscriu-te</button>
+      </form>
+    </section>
+    <section class="footer-info">
+      <div class="footer-logo">
+        <img src="./src/assets/logos/IT Alumni.png" alt="ITAlumni Logo">
+      </div>
+      <nav class="footer-nav">
+        <a href="#">Sobre nosaltres</a>
+        <a href="#">Funcionalitats</a>
+        <a href="#">Centre d'ajuda</a>
+        <a href="#">Contacta'ns</a>
+        <a href="#">FAQs</a>
+        <a href="#">Oportunitats laborals</a>
+      </nav>
+    </section>
+    <section class="footer-bottom">
+      <div class="footer-languague">
+        <select name="language selector">
+          <option value="1">Català</option>
+          <option value="2">Castellano</option>
+          <option value="3">English</option>
+        </select>
+      </div>
+      <div class="footer-legal">
+        <p>&copy; 2024 Brand, Inc. • <a href="#">Privadesa</a> • <a href="#">Termes d'ús</a></p>
+        <p><a href="#">Mapa del lloc</a></p>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </section>
+  </footer>    
 </body>
 </html>
