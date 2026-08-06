@@ -41,70 +41,96 @@
   </header>
 
   <main class="main">
-
-    <section class="hero">
-      <div class="hero-container mobile-only">
-        <div>Logo</div>
-        <p>Connectant i empoderant a la nostra comunitat global d'alumnes</p>
-        <button>Uneix-te</button>
-      </div>
-      <div class="hero-container desktop-only">
-        <h1>Benvinguts, alumni</h1>
-        <p>Connectant i empoderant a la nostra comunitat global d'alumnes</p>
-        <button>Uneix-te</button>
-        <button>Mira que fem</button>
-        <img>
-      </div>
-    </section>
-    <section class="benefits desktop-only">
-      <div>
-        <h2>Què guanyes en formar-ne part?</h2>
-        <p>
-          Comparteix i no perdis el contacte: Puja els<br>
-          teus moments importants, explica com va tot<br>
-          i queda amb els companys. Una xarxa per<br>
-          estar més a prop.
+    <section class="hero" aria-labelledby="hero-title"> 
+      <div class="hero-container">
+        <img 
+          class="hero-logo mobile-only" 
+          src="./src/assets/logos/it-alumni.png" 
+          alt="ITAlumni"
+        >
+        <h1 id="hero-title" class=" hero-title desktop-only">Benvinguts, alumni</h1>
+        <p class="hero-description">
+          Connectant i empoderant a la nostra comunitat global d'alumnes
         </p>
-        <button>Apunta't ja</button>
-        <p>
-          Participa en discussions: Intercanvia<br>
-          coneixements, punts de vista i opinions<br>
-          sobre temes que t'interessen. 
-        </p>
-        <button>Apunta't ja</button>
-        <p>
-          Xarxa Alumni: Connecta amb companys de<br>
-          promoció, fes noves amistats i crea records<br>
-          per durar tota la vida
-        </p>
-        <button>Apunta't ja</button>
+        <div class="hero-buttons">
+          <button class="btn btn-solid" type="button">
+            Uneix-te
+          </button>
+          <button class="btn btn-outline desktop-only" type="button">
+            Mira què fem
+          </button>
+        </div>
       </div>
     </section>
-    <section class="social-proof desktop-only">
-      <h3>"T'ensenyem el que opinen els nostres súper-usuaris!"</h3>
+    <section id="benefits" class="benefits desktop-only" aria-labelledby="benefits-title">
+      <div class="benefits-container">
+        <h2 id="benefits-title">
+          Què guanyes en formar-ne part?
+        </h2>
+        <div class="benefits-list">
+          <article class="benefits-card">
+            <p>
+              Comparteix i no perdis el contacte: Puja els
+              teus moments importants, explica com va tot
+              i queda amb els companys. Una xarxa per
+              estar més a prop.
+            </p>
+            <button type="button">Apunta't ja</button>
+            <p>
+              Participa en discussions: Intercanvia
+              coneixements, punts de vista i opinions
+              sobre temes que t'interessen. 
+            </p>
+            <button type="button">Apunta't ja</button>
+            <p>
+              Xarxa Alumni: Connecta amb companys de
+              promoció, fes noves amistats i crea records
+              per durar tota la vida
+            </p>
+            <button type="button">Apunta't ja</button>
+          </article>
+        </div> 
+      </div>
+    </section>
+    <section class="social-proof desktop-only" aria-labelledby="testimonials-title">
+      <h2>"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
       <p>
-        "Gràcies a IT Alumni vaig aconseguir la feina<br>
-        dels meus somnis en el món tech amb el seu<br>
+        "Gràcies a IT Alumni vaig aconseguir la feina
+        dels meus somnis en el món tech amb el seu
         increïble programa de mentoria."
       </p>
       <p>
-        "La meva xarxa d'aquesta comunitat ha estat<br>
-        clau: va revolucionar la meva carrera i em va<br>
+        "La meva xarxa d'aquesta comunitat ha estat
+        clau: va revolucionar la meva carrera i em va
         mostrar camins insospitats."
       </p>
       <p>
-        "IT Alumni em va donar les eines i l'autoestima<br>
+        "IT Alumni em va donar les eines i l'autoestima
         per fer realitat el meu somni d'emprendre."
       </p>
-      <button></button>
-      <button></button>
+      <div class="previous-next">
+        <button 
+          class="nav-btn prev-btn"
+          type="button"
+          aria-label="Mostrar la pàgina anterior"
+          >
+            &#10094;
+        </button>
+        <button 
+          class="nav-btn next-btn"
+          type="button"
+          aria-label="Mostrar la pàgina següent"
+        >
+          &#10095;
+        </button>
+      </div>
     </section>
   </main>
 
   <footer class="footer desktop-only">
     <section class="footer-newsletter">
       <h3>
-        "No et perdis res, subscriu-<br>
+        "No et perdis res, subscriu-
         te!""
       </h3>
       <form class="newsletter-form">
