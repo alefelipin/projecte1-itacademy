@@ -10,23 +10,33 @@
 </head>
 <body>
 
-  <header class="header">
-
-    <div class="header-container desktop-only">
-
-      <nav>
-        <div>Logo</div>
-        <div>
-          <a>Inici</a>
-          <a>Xarxa</a>
-          <a>Oportunitats de feina</a>
-        </div>
-        <div>
-          <button>Apunta't</button>
-          <button>Com et veuen?</button>
-        </div>
-      </nav>
-  
+  <header class="header desktop-only">
+    
+    <a class="header-logo" href="./index.html" aria-label="Tornar a la pàgina d'inici d'ITAlumni">
+      <img src="./src/assets/logos/it-alumni.png" alt="ITAlumni">
+    </a>
+    <nav class="header-nav" aria-label="Navegació principal">
+      <ul class="nav-list">
+        <li>
+          <a href="./index.html" class="nav-item">Inici</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">Xarxa</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">Oportunitats de feina</a>
+        </li> 
+      </ul> 
+    </nav>
+    <div class="header-buttons">
+      <a href="#" class="btn btn-outline">
+        <i class="fa-solid fa-user-plus" aria-hidden="true"></i> 
+        <span>Apunta't</span>
+      </a>
+      <a href="#" class="btn btn-solid">
+        <i class="fa-regular fa-user" aria-hidden="true"></i>
+        <span>Com et veuen?</span>
+      </a>
     </div>
   </header>
 
@@ -107,7 +117,7 @@
     </section>
     <section class="footer-info">
       <div class="footer-logo">
-        <img src="./src/assets/logos/IT Alumni.png" alt="ITAlumni Logo">
+        <img src="./src/assets/logos/it-alumni.png" alt="ITAlumni">
       </div>
       <nav class="footer-nav">
         <a href="#">Sobre nosaltres</a>
@@ -131,9 +141,9 @@
         <p><a href="#">Mapa del lloc</a></p>
       </div>
       <div class="footer-social">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
       </div>
     </section>
   </footer>    
