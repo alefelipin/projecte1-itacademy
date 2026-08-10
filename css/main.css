@@ -41,8 +41,8 @@ body {
   width: 285px;
   max-width: 100%;
   height: auto;
-  margin-top: 40px;
-  margin-bottom: 32px;
+  margin-top: 310px;
+  margin-bottom: 15px;
 }
 
 .hero-description{
@@ -105,6 +105,8 @@ body {
 .btn--join {
   width: 324px;
   height: 52px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 
