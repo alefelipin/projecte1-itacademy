@@ -14,7 +14,7 @@ body {
 .hero {
   width: 100%;
   min-height: 100svh;
-  padding: 16px;
+  padding: 0px;
 
   display: flex;
   justify-content: center;
@@ -25,9 +25,89 @@ body {
 
 .hero-container {
   width: 100%;
-  min-height: calc(100svh - 32px);
+  max-width: 393px;
+  height: 852px;
+  box-sizing: border-box;
+  padding: 0px;
+
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
+
+.hero-logo {
+  width: 285px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.hero-description{
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  color: #1D2128;
+  line-height: 30px;
+  text-align: center;
+  max-width: 280px;
+  margin-bottom: auto;
+}
+
+.source-sans-3-paragraph {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: 1px solid;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.btn--soft {
+  border-radius: 6px;
+}
+
+.btn--rounded {
+  border-radius: 10px;
+}
+
+.btn--gradient {
+  background: linear-gradient(#873AAA, #DF007F);
+  color:#FFFFFF;
+}
+
+.btn--font-xsmall {
+  font-size: 12px;
+}
+
+.btn--font-small {
+  font-size: 14px;
+}
+
+.btn--font-medium {
+  font-size: 16px;
+}
+
+.btn--font-large {
+  font-size: 18px;
+}
+
+.btn--join {
+  width: 324px;
+  height: 52px;
+}
+
+
+
+
+
