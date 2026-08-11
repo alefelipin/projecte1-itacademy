@@ -69,7 +69,7 @@ body {
 }
 
 .btn {
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0, 0);
   font-family: "Source Sans 3", sans-serif;
 }
 
@@ -77,7 +77,6 @@ body {
   border-color: #CE0A86;
   background: linear-gradient(#873AAA, #DF007F);
   color:#FFFFFF;
-
 }
 
 .btn--soft {
@@ -159,6 +158,63 @@ body {
   .hero-image {
     width: 1176px;
     height: 640px;
+  }
+
+  .benefits-title {
+    display: flex;
+    justify-content: center;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 32px;
+    color:#171A1F;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .benefits-list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .benefits-card {
+    width: 100%;
+    max-width: 300px;
+    min-height: 238px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .benefits-card p {
+    width: 300px;
+    height: 104px;
+
+    margin: 48px 0 42px;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    color: #565E6C;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .benefits-button {
+    width: 140px;
+    height: 44px;
+    margin: 0 0 0 80px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+
+  }
+
+  .btn--colored {
+    background: #FEF0F9;
+    color:#CE0A86;
   }
 
 
