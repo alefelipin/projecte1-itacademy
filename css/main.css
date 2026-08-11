@@ -156,7 +156,10 @@ body {
     color: #565E6C;
   }
 
-  
+  .hero-image {
+    width: 1176px;
+    height: 640px;
+  }
 
 
 
