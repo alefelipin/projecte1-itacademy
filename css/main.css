@@ -7,67 +7,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.desktop-only {
-  display: none;
-}
-
-.hero {
-  width: 100%;
-  min-height: 100svh;
-  padding: 0px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-}
-
-.hero-container {
-  width: 100%;
-  max-width: 393px;
-  height: 852px;
-  box-sizing: border-box;
-  padding: 0px;
-
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.hero-logo {
-  width: 285px;
-  max-width: 100%;
-  height: auto;
-  margin-top: 310px;
-  margin-bottom: 15px;
-}
-
-.hero-description{
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 20px;
-  color: #1D2128;
-  line-height: 30px;
-  text-align: center;
-  max-width: 280px;
-  margin-bottom: auto;
-}
-
-.source-sans-3-paragraph {
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.hero-buttons {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .btn {
   border: 1px solid rgba(0, 0, 0, 0);
   font-family: "Source Sans 3", sans-serif;
@@ -113,6 +52,79 @@ body {
   height: 52px;
   margin-top: 35px;
   margin-bottom: 35px;
+}
+
+.btn--colored {
+    background: #FEF0F9;
+    color:#CE0A86;
+  }
+
+  .btn--white {
+    border-color: #CE0A86;
+    background: #FFFFFF;
+    color: #CE0A86;
+  }
+
+.desktop-only {
+  display: none;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100svh;
+  padding: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 393px;
+  height: 852px;
+  box-sizing: border-box;
+  padding: 0px;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-logo {
+  width: 285px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 310px;
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  color: #1D2128;
+  line-height: 30px;
+  text-align: center;
+  max-width: 280px;
+  margin-bottom: auto;
+}
+
+.source-sans-3-paragraph {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -212,10 +224,7 @@ body {
 
   }
 
-  .btn--colored {
-    background: #FEF0F9;
-    color:#CE0A86;
-  }
+  
 
 
 
