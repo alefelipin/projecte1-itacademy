@@ -224,7 +224,89 @@ body {
 
   }
 
-  
+  .opinions-section {
+    width: 100%;
+  }
+
+  .opinions-title {
+    display: flex;
+    justify-content: center;
+    margin: 96px 22px 48px 22px;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color:#171A1F; 
+  }
+
+  .opinions-box {
+    width: 100%;
+    max-width: 1176px;
+    min-height: 214px;
+    margin: 0 22px 156px 22px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .opinions-card {
+    width: 100%;
+    max-width: 371px;
+    min-height: 214px;
+    gap: 31.5px;
+
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+  }
+
+  .opinions-card img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .opinions-card p {
+    width: 235px;
+    height: 36px;
+    margin: 24px;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #323842;
+    text-align: center;
+  }
+
+  .opinions-card blockquote {
+    width: 323px;
+    height: 78px;
+    margin: 0;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #565E6C;
+    text-align: center;
+  }
+
+  .review-stars {
+  display: inline-flex;
+  width: 17.63px;
+  height: 16.83px;
+  color: #CCC;
+  }
+
+  .review-stars .activated {
+    color: #F3C63F;
+  }
+
+
+
 
 
 
