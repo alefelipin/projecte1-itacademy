@@ -339,10 +339,63 @@ body {
     background-color: #F3F4F6;
     font-size: 18px;
     color: #565E6C;
+  }
 
-    
+  .footer {
+    background: #1D2128;
+  }
 
-}
+  .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-newsletter h3 {
+    max-width: 234px;
+    height: 30px;
+
+    margin-top: 51px;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .newsletter-form {
+    display: flex;
+    align-items: stretch;
+    margin-top: 83px;
+  }
+
+  .form-input {
+    width: 263px;
+    height: 43px;
+    opacity: 1;
+    border-radius: 22px 0 0 22px;
+    border: 1px solid #BCC1CA;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #DEE1E6;
+  }
+
+  .form-button {
+    border-radius: 0 22px 22px 0;
+
+  }
+
+
 
 
 
