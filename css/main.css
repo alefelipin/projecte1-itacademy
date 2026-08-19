@@ -392,7 +392,68 @@ body {
 
   .form-button {
     border-radius: 0 22px 22px 0;
+  }
 
+  .footer-info {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 28px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo p {
+    margin: 0;
+    
+    font-family: "Wallpoet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  .footer-icon {
+    width: 40px;
+    height: 50px;
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-nav ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    list-style: none;
+  }
+
+  .footer-nav a {
+    text-decoration: none;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
   }
 
 
