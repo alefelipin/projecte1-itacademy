@@ -456,6 +456,40 @@ body {
     color: #FFFFFF;
   }
 
+  .footer-language select {
+    width: 122px;
+    height: 36px;
+
+    padding: 0 12px;
+
+    border: 1px solid #BCC1CA;
+    border-radius: 6px;
+    background-color: transparent;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #DEE1E6;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-legal {
+    color: #FFFFFF;
+  }
+
+  .footer-legal a {
+    color: #FFFFFF;
+  }
+
 
 
 
