@@ -126,12 +126,12 @@ body {
 }
 
 .hero-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 26px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 26px;
+}
 
 @media (min-width: 1024px) {
 
@@ -404,6 +404,12 @@ body {
     background: #1D2128;
   }
 
+  .footer-container {
+    width: 100%;
+    max-width: 1176px;
+    margin: 0 auto;
+  }
+
   .footer-newsletter {
     display: flex;
     flex-direction: column;
@@ -456,8 +462,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 28px;
+    padding: 28px 0;
   }
 
   .footer-logo {
