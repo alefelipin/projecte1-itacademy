@@ -1,91 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITAlumni | Comunitat d'exalumnes IT Academy</title>
-    <link rel="stylesheet" href="./src/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITAlumni | Comunitat d'exalumnes IT Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Wallpoet&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <link rel="stylesheet" href="./css/main.css">
+    
 </head>
 <body>
-
-  <header class="header">
-
+  <header class="header desktop-only">
     <div class="header-container">
-
-      <nav>
-        <div>
-          <img>
-        </div>
-        <div>
-          <a>Inici</a>
-          <a>Xarxa</a>
-          <a>Oportunitats de feina</a>
-        </div>
-        <div>
-          <button>Apunta't</button>
-          <button>Com et veuen?</button>
-        </div>
+      <a class="header-logo" href="./index.html" aria-label="Tornar a la pàgina d'inici d'ITAlumni">
+        <img src="./src/assets/logos/it-alumni.png" alt="ITAlumni">
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <ul class="nav-list">
+          <li>
+            <a href="./index.html" class="nav-link nav-link--active">Inici</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Xarxa</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Oportunitats de feina</a>
+          </li> 
+        </ul> 
       </nav>
-  
+      <div class="header-buttons">
+        <button class="btn btn--rounded btn--white btn--font-small">
+          <i class="fa-solid fa-user-plus" aria-hidden="true"></i> 
+          Apunta't
+        </button>
+        <button class="btn btn--rounded btn--gradient btn--font-small">
+          <i class="fa-regular fa-user" aria-hidden="true"></i>
+          Com et veuen?
+        </button>
+      </div>
     </div>
   </header>
 
-  <main>
-
-    <section class="hero">
-      <div class="hero__container">
-        <h1>Benvinguts, alumni</h1>
-        <p>Connectant i empoderant a la nostra comunitat global d'alumnes</p>
-        <button>Uneix-te</button>
-        <button>Mira que fem</button>
-        <img>
-        <h2>Què guanyes en formar-ne part?</h2>
-        <p>
-          Comparteix i no perdis el contacte: Puja els<br>
-          teus moments importants, explica com va tot<br>
-          i queda amb els companys. Una xarxa per<br>
-          estar més a prop.
+  <main class="main">
+    <section class="hero" aria-labelledby="hero-title"> 
+      <div class="hero-container">
+        <img 
+          class="hero-logo mobile-only" 
+          src="./src/assets/logos/it-alumni.png" 
+          alt="ITAlumni"
+        >
+        <h1 id="hero-title" class="hero-title desktop-only">Benvinguts, alumni</h1>
+        <p class="hero-description mobile-only">
+          Connectant i empoderant a la nostra comunitat global d'alumnes
         </p>
-        <button>Apunta't ja</button>
-        <p>
-          Participa en discussions: Intercanvia<br>
-          coneixements, punts de vista i opinions<br>
-          sobre temes que t'interessen. 
-        </p>
-        <button>Apunta't ja</button>
-        <p>
-          Xarxa Alumni: Connecta amb companys de<br>
-          promoció, fes noves amistats i crea records<br>
-          per durar tota la vida
-        </p>
-        <button>Apunta't ja</button>
+        <div class="hero-buttons">
+          <button class="btn btn--join btn--soft btn--gradient btn--font-large" type="submit">
+            Uneix-te
+          </button>
+          <button class="btn btn--join btn--soft btn--white btn--font-large" type="submit">
+            Mira què fem
+          </button>
+        </div>
+        <img
+          class="hero-image desktop-only"
+          src="./src/assets/images/students.png"
+          alt="students"
+        >
       </div>
-
+    </section>
+    <section class="benefits desktop-only" aria-labelledby="benefits-title">
+      <div class="benefits-container">
+        <h2 id="benefits-title" class="benefits-title">
+          Què guanyes en formar-ne part?
+        </h2>
+        <div class="benefits-list">
+          <article class="benefits-card">
+            <p>
+              Comparteix i no perdis el contacte: Puja els
+              teus moments importants, explica com va tot
+              i queda amb els companys. Una xarxa per
+              estar més a prop.
+            </p>
+            <button class="btn benefits-button btn--rounded btn--gradient">Apunta't ja</button>
+          </article>
+          <article class="benefits-card">
+            <p>
+              Participa en discussions: Intercanvia
+              coneixements, punts de vista i opinions
+              sobre temes que t'interessen. 
+            </p>
+            <button class="btn benefits-button btn--rounded btn--colored">Apunta't ja</button>
+          </article>
+          <article class="benefits-card">
+            <p>
+              Xarxa Alumni: Connecta amb companys de
+              promoció, fes noves amistats i crea records
+              per durar tota la vida
+            </p>
+            <button class="btn benefits-button btn--rounded btn--colored">Apunta't ja</button>
+          </article>
+        </div> 
+      </div>
+    </section>
+    <section class="opinions-section desktop-only" aria-labelledby="opinions-title">
+      <h2 id="opinions-title" class="opinions-title">"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
+      <div class="opinions-box">
+        <article class="opinions-card">
+          <img
+          class="person1-image desktop-only" aria-labelledby="opinion1"
+          src="./src/assets/images/mikel.png"
+          alt="foto del Mikel"
+          >
+          <p>Mikel</p>
+          <div class="review-stars">
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+          </div>
+          <blockquote id="opinion1">
+            "Gràcies a IT Alumni vaig aconseguir la feina
+            dels meus somnis en el món tech amb el seu
+            increïble programa de mentoria."
+          </blockquote>
+        </article>
+        <article class="opinions-card">
+          <img
+          class="person1-image desktop-only" aria-labelledby="opinion2"
+          src="./src/assets/images/emma.png"
+          alt="foto de l'Emma"
+          >
+          <p>Emma</p>
+          <div class="review-stars">
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+          </div>
+          <blockquote id="opinion2">
+            "La meva xarxa d'aquesta comunitat ha estat
+            clau: va revolucionar la meva carrera i em va
+            mostrar camins insospitats."
+          </blockquote>
+        </article>
+        <article class="opinions-card">
+          <img
+          class="person1-image desktop-only" aria-labelledby="opinion3"
+          src="./src/assets/images/laia.png"
+          alt="foto de la Laia"
+          >
+          <p>Laia</p>
+          <div class="review-stars">
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+            <span class="activated">&#9733;</span>
+          </div>
+          <blockquote id="opinion3">
+            "IT Alumni em va donar les eines i l'autoestima
+            per fer realitat el meu somni d'emprendre."
+          </blockquote>
+        </article>
+      </div>
+          
+      <div class="previous-next">
+        <button 
+          class="nav-btn prev-btn"
+          type="button"
+          aria-label="Mostrar la pàgina anterior"
+          >
+            &#10094;
+        </button>
+        <button 
+          class="nav-btn next-btn"
+          type="button"
+          aria-label="Mostrar la pàgina següent"
+          >
+          &#10095;
+        </button>
+      </div>
     </section>
   </main>
 
-  <footer>
-
-    <h3>"T'ensenyem el que opinen els nostres súper-usuaris!"</h3>
-    <p>
-      "Gràcies a IT Alumni vaig aconseguir la feina<br>
-      dels meus somnis en el món tech amb el seu<br>
-      increïble programa de mentoria."
-    </p>
-    <p>
-      "La meva xarxa d'aquesta comunitat ha estat<br>
-      clau: va revolucionar la meva carrera i em va<br>
-      mostrar camins insospitats."
-    </p>
-    <p>
-      "IT Alumni em va donar les eines i l'autoestima<br>
-      per fer realitat el meu somni d'emprendre."
-    </p>
-    <button></button>
-    <button></button>
-  </footer>
-
-
-    
+  <footer class="footer desktop-only">
+    <div class="footer-container">
+      <section class="footer-newsletter">
+        <h3>
+          "No et perdis res, subscriu-te!""
+        </h3>
+        <form class="newsletter-form">
+          <div class="form-items">
+            <span class="icon-email">✉</span>
+            <input class="form-input" type="email" placeholder="El teu email" required>
+          </div>
+          <button class="form-button btn btn--gradient" type="submit">Subscriu-te</button>
+        </form>
+      </section>
+      <section class="footer-info">
+        <div class="footer-logo">
+          <img 
+            class="footer-icon" 
+            src="./src/assets/icons/A-letter.png" 
+            alt="ITAlumni"
+          >
+          <p>LUMNI</p>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="#">Sobre nosaltres</a>
+            </li>
+            <li>
+              <a href="#">Funcionalitats</a>
+            </li>
+            <li>
+              <a href="#">Centre d'ajuda</a>
+            </li>
+            <li>
+              <a href="#">Contacta'ns</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Oportunitats laborals</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer-bottom">
+        <div class="footer-language">
+          <select name="language selector">
+            <option value="1">Català</option>
+            <option value="2">Castellano</option>
+            <option value="3">English</option>
+          </select>
+        </div>
+        <div class="footer-legal">
+          <p>&copy; 2024 Brand, Inc. • <a href="#">Privadesa</a> • <a href="#">Termes d'ús</a></p>
+          <p><a href="#">Mapa del lloc</a></p>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </section>
+    </div>
+  </footer>    
 </body>
 </html>
