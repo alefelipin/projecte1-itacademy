@@ -655,6 +655,55 @@ body {
     height: 44px;
   }
 
+  .signup-separator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 40px;
+
+    width: 100%;
+    margin: 32px 0;
+  }
+
+  .signup-separator::before,
+  .signup-separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+
+    background-color: #BCC1CA;
+  }
+
+  .signup-separator span {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #9095A0;
+  }
+
+  .signup-by-social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .signup-by-social--button {
+    display: flex;
+    justify-content: center;
+    max-width: auto;
+    height: 44px;
+  }
+
+  .btn--social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 308.32px;
+  }
+
 
   
 
