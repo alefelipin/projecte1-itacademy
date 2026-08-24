@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crea un compte</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Wallpoet&display=swap">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+  <main class="main">
+    <section class="signup" aria-labelledby="signup-title"> 
+      <div class="signup-container">
+        <h1 id="signup-title" class="signup-title">
+          Crea un compte
+        </h1>
+
+        <form class="signup--form">
+          <div class="signup--fields">
+            <div class="signup-card">
+              <img class="signup-icon" src="./src/assets/icons/User.svg" alt="">
+              <input
+                class="form-input--signup"
+                type="text" 
+                placeholder="Posa el teu nom" 
+                required
+              >
+            </div>
+            <div class="signup-card">
+              <img class="signup-icon" src="./src/assets/icons/User.svg" alt="">
+              <input
+              class="form-input--signup"
+              type="text" 
+              placeholder="Posa el teu cognom" 
+              required
+              >
+            </div>
+            <div class="signup-card">
+              <img class="signup-icon" src="./src/assets/icons/Mail.svg" alt="">
+              <input
+              class="form-input--signup"
+              type="email" 
+              placeholder="El teu correu electrònic" 
+              required
+              >
+            </div>
+            <div class="signup-card">
+              <img class="signup-icon" src="./src/assets/icons/Frame.svg" alt="">
+              <input
+              class="form-input--signup"
+              type="password" 
+              placeholder="Crea una contrasenya" 
+              required
+              >
+            </div> 
+          </div>
+
+          <div class="signup--terms">
+            <input id="terms" type="checkbox" required>
+            <label for="terms">Accepto els Termes i Condicions</label>
+          </div>
+
+          <div class="signup--button">
+            <button class="btn btn--join btn--rounded btn--colored-dark btn--font-medium" type="submit">
+              Registra't
+            </button>
+          </div>
+        </form> 
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>
