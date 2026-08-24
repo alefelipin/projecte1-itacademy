@@ -670,7 +670,6 @@ body {
     content: "";
     flex: 1;
     height: 1px;
-
     background-color: #BCC1CA;
   }
 
@@ -686,22 +685,53 @@ body {
   .signup-by-social {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
     width: 100%;
   }
 
-  .signup-by-social--button {
+  .signup-by-social--card {
     display: flex;
-    justify-content: center;
-    max-width: auto;
+    align-items: center;
+    width: 100%;
+    max-width: 308.32px;
     height: 44px;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px; 
   }
 
   .btn--social {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 308.32px;
+    justify-content: center;
+    width: auto;
+  }
+
+  .signup-by-social--card-apple {
+    background-color: #FEF0F9;
+  }
+
+  .signup-by-social--card-google {
+    background-color: #FDF2F2;
+  }
+
+  .signup-by-social--card-facebook {
+    background-color: #F1F8FD;
+  }
+
+  .btn--apple {
+    background-color: #FEF0F9;
+    color: #FFFFFF;
+  }
+
+  .btn--google {
+    background-color: #FDF2F2;
+    color: #DE3B40;
+  }
+
+  .btn--facebook {
+    background-color: #F1F8FD;
+    color: #379AE6;
   }
 
 
