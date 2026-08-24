@@ -693,6 +693,7 @@ body {
   .signup-by-social--card {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 308.32px;
     height: 44px;
