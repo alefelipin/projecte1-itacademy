@@ -814,7 +814,7 @@ a {
     background-size: cover;
   }
 
-  body.page-signup .main {
+  body.page-signup .signup-main {
     width: 630px;
     min-height: 748px;
     display: grid;
