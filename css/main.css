@@ -1,5 +1,5 @@
 /* ========================================
-   GLOBAL
+  GLOBAL
 ======================================== */
 
 * {
@@ -20,7 +20,7 @@ a {
 }
 
 /* ========================================
-   UTILITIES
+  UTILITIES
 ======================================== */
 
 .mobile-only {
@@ -31,8 +31,18 @@ a {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
+
 /* ========================================
-   COMPONENTS
+  COMPONENTS
 ======================================== */
 
 .btn {
@@ -92,12 +102,8 @@ a {
   color: #CE0A86;
 }
 
-.desktop-only {
-  display: none;
-}
-
 /* ========================================
-   HOME / INDEX.HMTL
+  HOME / INDEX.HTML
 ======================================== */
 
 .home-header {
@@ -163,15 +169,11 @@ a {
   gap: 26px;
 }
 
+/* ========================================
+  HOME / INDEX.HTML - DESKTOP ONLY
+======================================== */
+
 @media (min-width: 1024px) {
-
-  .desktop-only {
-    display: block;
-  }
-
-  .mobile-only {
-    display: none;
-  }
 
   .home-header {
     display: flex;
@@ -599,33 +601,30 @@ a {
     text-align: center;
     color: #000000;
   }
-  .signup--fields {
+  .signup-fields {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
   }
 
-  .signup-card {
+  .signup-field {
     display: flex;
     justify-content: left;
     width: 314.1px;
     height: 42px;
-
     border: 1px solid #FFFFFF;
     border-radius: 6px;
     background-color: #F3F4F6;
-
   }
 
   .signup-icon {
     width: 20px;
   }
 
-  .form-input--signup {
+  .signup-input {
     border: none;
     background-color: transparent;
-
     font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -636,19 +635,19 @@ a {
     color: #BCC1CA;
   }
 
-  .signup--terms {
+  .signup-terms {
     display: flex;
     justify-content: left;
     width: 314.1px;
     margin: 24px auto 0;
   }
 
-  .signup--terms input {
+  .signup-terms input {
     position: absolute;
     opacity: 0;
   }
 
-  .signup--terms label {
+  .signup-terms label {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -663,7 +662,7 @@ a {
     color: #171A1F;
   }
 
-  .signup--terms label::before {
+  .signup-terms label::before {
     content: "";
     width: 16px;
     height: 16px;
@@ -675,17 +674,23 @@ a {
     background-position: center;
   }
 
-  .signup--terms input:checked + label::before {
+  .signup-terms input:checked + label::before {
     background-color: #CE0A86;
     border-color: #CE0A86;
     background-image: url("../src/assets/icons/Vector.svg");
   }
 
-  .signup--button {
+  .signup-button-container {
     display: flex;
     justify-content: center;
-    max-width: auto;
     height: 44px;
+  }
+
+  .signup-button {
+    width: 324px;
+    height: 52px;
+    margin-top: 35px;
+    margin-bottom: 35px;
   }
 
   .signup-separator {
@@ -715,7 +720,7 @@ a {
     color: #9095A0;
   }
 
-  .signup-by-social {
+  .signup-social {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -723,7 +728,7 @@ a {
     width: 100%;
   }
 
-  .signup-by-social--card {
+  .signup-social-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -741,15 +746,15 @@ a {
     width: auto;
   }
 
-  .signup-by-social--card-apple {
+  .signup-social-card--apple {
     background-color: #FEF0F9;
   }
 
-  .signup-by-social--card-google {
+  .signup-social-card--google {
     background-color: #FDF2F2;
   }
 
-  .signup-by-social--card-facebook {
+  .signup-social-card--facebook {
     background-color: #F1F8FD;
   }
 
@@ -800,6 +805,10 @@ a {
     line-height: 22px;
     color: #CE0A86;
   }
+
+/* ========================================
+  SIGNUP.HTML - DESKTOP ONLY
+======================================== */
 
 @media (min-width: 1024px) {
 
