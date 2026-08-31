@@ -15,25 +15,124 @@
   <link rel="stylesheet" href="./css/main.css">
 
 </head>
-<body>
+<body class="page-home">
   <header class="home-header">
     <div class="home-header-container">
       <h1 class="home-title">Home</h1>
-      <img class="home-header-icon" src="./src/assets/icons/align-bottom.svg" alt="">
-      <img class="home-header-avatar" src="./src/assets/images/avatar.svg" alt="foto de perfil">
+      <div class="home-header-right">
+        <img 
+          class="home-header-icon" 
+          src="./src/assets/icons/align-bottom.svg" 
+          alt=""
+        >
+        <img 
+          class="home-header-avatar" 
+          src="./src/assets/images/avatar.svg" 
+          alt="foto de perfil"
+        >
+      </div> 
     </div>
     <form class="home-header-form">
       <div class="home-header-field">
-        <img class="home-form-icon" src="./src/assets/icons/search.svg" alt="">
+        <div class="header-icon-wrapper">
+          <img 
+            class="home-form-icon" 
+            src="./src/assets/icons/search.svg" 
+            alt=""
+          >
+        </div> 
         <input
           class="home-input"
           type="text" 
-          placeholder="Search alumni" 
+          placeholder="Search alumni..." 
           required
         >
       </div>
     </form>
   </header>
+  <main class="home-main">
+    <section class="home-main-container">
+      <div class="home-main-card">
+        <img 
+            class="home-main-image" 
+            src="./src/assets/images/image20.png" 
+            alt="Networking"
+          >
+        <h2 class="home-card-title">
+          Networking
+        </h2>
+        <p class="home-card-text">
+          Connect with professionals in your field
+        </p>
+        <button 
+          class="btn btn--home btn--white btn--font-xsmall" 
+          type="button"
+        >
+          Explore
+        </button>
+      </div>
+      <div class="home-main-card">
+        <img 
+            class="home-main-image"
+            src="./src/assets/images/image20.png" 
+            alt="Job Opportunities"
+          >
+        <h2 class="home-card-title">
+          Job Opportunities
+        </h2>
+        <p class="home-card-text">
+          Discover openings tailored to your skills
+        </p>
+        <button 
+          class="btn btn--home btn--white btn--font-xsmall" 
+          type="button"
+        >
+          Search Jobs
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <section class="home-footer-container">
+      <div class="home-footer-wrapper">
+        <img 
+          class="home-footer-icon" 
+          src="./src/assets/icons/home.svg" 
+          alt="">
+        <p class="home-footer-text">
+          Home
+        </p> 
+      </div>
+      <div class="home-footer-wrapper">
+        <img 
+          class="home-footer-icon" 
+          src="./src/assets/icons/network.svg" 
+          alt="">
+        <p class="home-footer-text">
+          Networking
+        </p> 
+      </div>
+      <div class="home-footer-wrapper">
+        <img 
+          class="home-footer-icon" 
+          src="./src/assets/icons/briefcase.svg" 
+          alt="">
+        <p class="home-footer-text">
+          Job Portal
+        </p> 
+      </div>
+      <div class="home-footer-wrapper">
+        <img 
+          class="home-footer-icon" 
+          src="./src/assets/icons/profile.svg" 
+          alt="">
+        <p class="home-footer-text">
+          Profile
+        </p> 
+      </div>
+    </section>
+  </footer>
   
 </body>
 </html>
