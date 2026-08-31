@@ -849,7 +849,6 @@ body.page-home {
 
 .home-header {
   width: 100%;
-   /* Margen derecho en móvil */
   box-sizing: border-box; 
 }
 
@@ -976,14 +975,12 @@ body.page-home {
   min-height: 32px;
 }
 
-.home-footer {
- border: 1px solid #171A1F12;
- margin-bottom: 5px;
-}
 .home-footer-container {
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  border: 1px solid #171A1F12;
+  margin-bottom: 5px;
 }
 
 .home-footer-wrapper {
@@ -1007,7 +1004,178 @@ body.page-home {
   text-align: center;
 }
 
+/* ========================================
+  NETWORKING PAGE / NETWORKING.HTML - MOBILE & DESKTOP
+======================================== */
 
+body.networking-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
+.networking-header {
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.networking-main {
+  flex: 1;
+}
+
+.networking-footer {
+  width: 100%;
+}
+
+.networking-header-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 314.1px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.networking-title {
+  grid-column: 2;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+}
+
+.networking-header-right {
+  grid-column: 3;
+  display: flex;
+  align-items: right;
+  gap: 12px;
+}
+
+.networking-header-icon {
+  width: auto;
+  height: auto;
+}
+
+.networking-header-form{
+  display: flex;
+  justify-content: center;
+}
+
+.networking-header-field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 314.1px;
+  height: 42px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  background-color: #F3F4F6;
+  padding: 0 12px;
+  gap: 10px;
+}
+
+.networking-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.networking-form-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.networking-input {
+  border: none;
+  background-color: transparent;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  color: #BCC1CA;
+}
+
+.networking-main-container {
+  border: 1px solid #171A1F12;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.networking-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.networking-card-info {
+  grid-column: 1;
+  margin: 0;
+  text-align: left;
+  gap: 10px;
+}
+
+.networking-card-name {
+  min-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  color: #171A1F;
+}
+
+.networking-card-info {
+  min-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+  color: #9095A0;
+}
+
+
+
+
+
+
+
+
+.networking-footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border: 1px solid #171A1F12;
+  margin-bottom: 5px;
+}
+
+.networking-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.networking-footer-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.networking-footer-text {
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 16px;
+  color: #565E6C;
+  text-align: center;
+}
 
 
 
