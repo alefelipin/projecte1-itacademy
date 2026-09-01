@@ -888,10 +888,6 @@ body.page-home {
   flex: 1;
 }
 
-.home-footer {
-  width: 100%;
-}
-
 .home-header-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1005,35 +1001,6 @@ body.page-home {
 
 .btn--home {
   min-height: 32px;
-}
-
-.home-footer-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  border: 1px solid #171A1F12;
-  margin-bottom: 5px;
-}
-
-.home-footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.home-footer-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.home-footer-text {
-  margin: 0;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10px;
-  line-height: 16px;
-  color: #565E6C;
-  text-align: center;
 }
 
 /* ========================================
