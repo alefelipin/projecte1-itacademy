@@ -13,7 +13,7 @@
 
 </head>
 <body class="page-networking">
-  <header class="mobile-header">
+  <header class="mobile-header mobile-only">
     <div class="mobile-header-container">
       <div class="mobile-header-left">
         <a href="./home.html" class="mobile-header-back">
@@ -55,8 +55,69 @@
       </div>
     </form>
   </header>
+  <header class="desktop-header desktop-only">
+    <div class="desktop-header-container">
+      <div class="desktop-header-logo">
+        <img
+          src="./src/assets/logos/it-alumni.png"
+          alt="Alumni Connect"
+        >
+      </div>
+
+      <nav class="desktop-header-nav" aria-label="Main navigation">
+        <ul class="desktop-header-nav-list">
+          <li>
+            <a
+              class="desktop-header-nav-link"
+              href="./home.html"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="desktop-header-nav-link desktop-header-nav-link--active"
+              href="./networking.html"
+            >
+              Networking
+            </a>
+          </li>
+          <li>
+            <a
+              class="desktop-header-nav-link"
+              href="#"
+            >
+              Job Opportunities
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="desktop-header-actions">
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/search.svg"
+          alt="Search"
+        >
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/notification.svg"
+          alt="Notifications"
+        >
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/settings.svg"
+          alt="Settings"
+        >
+        <img
+          class="desktop-header-avatar"
+          src="./src/assets/images/avatar.svg"
+          alt="Profile picture"
+        >
+      </div>
+    </div>
+  </header>
   <main class="networking-main">
-    <section class="networking-main-container" aria-label="Networking">
+    <section class="networking-main-container mobile-only" aria-label="Networking">
       <article class="networking-card">
         <div class="networking-card-info">
           <h2 class="networking-card-name">
@@ -147,10 +208,13 @@
           alt="James Lee"
         >
       </article>
+    </section >
+    <section class="networking-desktop desktop-only">
+
     </section>
   </main>
 
-  <footer class="mobile-footer">
+  <footer class="mobile-footer mobile-only">
     <section class="mobile-footer-container">
       <div class="mobile-footer-item">
         <img 
@@ -190,6 +254,6 @@
       </div>
     </section>
   </footer>
-  
+
 </body>
 </html>
