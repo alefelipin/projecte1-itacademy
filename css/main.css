@@ -42,7 +42,7 @@ a {
 }
 
 /* ========================================
-  COMPONENTS
+  COMPONENTS - BUTTONS
 ======================================== */
 
 .btn {
@@ -101,6 +101,42 @@ a {
   border-color: #CE0A86;
   background: #FFFFFF;
   color: #CE0A86;
+}
+
+/* ========================================
+  COMPONENTS - FOOTER MOBILE FIRST
+======================================== */
+
+.mobile-footer {
+  width: 100%;
+}
+
+.mobile-footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border: 1px solid #171A1F12;
+  margin-bottom: 5px;
+}
+
+.mobile-footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-footer-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-footer-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #565E6C;
+  text-align: center;
 }
 
 /* ========================================
@@ -379,7 +415,6 @@ a {
     margin: 2px 0 0;
 
     font-family: "Source Sans 3", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -456,7 +491,6 @@ a {
 
     font-family: "Source Sans 3", sans-serif;
     font-weight: 600;
-    font-style: normal;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0%;
@@ -479,7 +513,6 @@ a {
 
     font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0%;
@@ -508,7 +541,6 @@ a {
     
     font-family: "Wallpoet", sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0%;
@@ -1008,7 +1040,7 @@ body.page-home {
   NETWORKING PAGE / NETWORKING.HTML - MOBILE & DESKTOP
 ======================================== */
 
-body.networking-home {
+body.page-networking {
   display: flex;
   flex-direction: column;
   min-height: 100svh;
@@ -1018,15 +1050,10 @@ body.networking-home {
 
 .networking-header {
   width: 100%;
-  box-sizing: border-box; 
 }
 
 .networking-main {
   flex: 1;
-}
-
-.networking-footer {
-  width: 100%;
 }
 
 .networking-header-container {
@@ -1141,41 +1168,6 @@ body.networking-home {
   color: #9095A0;
 }
 
-
-
-
-
-
-
-
-.networking-footer-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  border: 1px solid #171A1F12;
-  margin-bottom: 5px;
-}
-
-.networking-footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.networking-footer-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.networking-footer-text {
-  margin: 0;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10px;
-  line-height: 16px;
-  color: #565E6C;
-  text-align: center;
-}
 
 
 
