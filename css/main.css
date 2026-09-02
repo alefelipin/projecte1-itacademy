@@ -1100,13 +1100,22 @@ body.page-networking {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  margin-right: 40px;
+  margin-right: 24px;
 }
 .desktop-header-logo img {
   display: block;
-  width: 210px;
-  height: auto;
+  width: 36px;
+  height: 36px;
 }
+
+.desktop-header-title {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  margin-right: 42px;
+}
+
 .desktop-header-nav {
   display: flex;
   align-items: center;
@@ -1130,11 +1139,7 @@ body.page-networking {
   line-height: 22px;
   color: #565E6C;
 }
-.desktop-header-nav-link--active {
-  color: #CE0A86;
-  font-weight: 700;
-  border-bottom-color: #CE0A86;
-}
+
 .desktop-header-actions {
   display: flex;
   align-items: center;
@@ -1152,21 +1157,24 @@ body.page-networking {
   object-fit: cover;
 }
 .networking-desktop {
-width: 100%;
-max-width: none;
-margin: 0;
-padding: 40px 70px 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 40px 70px 0;
 }
 
-.networking-desktop-tools {
-display: flex;
-justify-content: space-between;
+.networking-desktop-toolbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
 .networking-desktop-search {
   width: 360px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .networking-desktop-search-field {
@@ -1176,14 +1184,15 @@ justify-content: space-between;
   height: 44px;
   padding: 0 14px;
   gap: 10px;
-
   border-radius: 6px;
-  background-color: #F3F4F6;
+  border: 1px solid #BCC1CA;
+  background-color: #FFFFFF;
 }
 
 .networking-desktop-search-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
+  color: #171A1F;
 }
 
 .networking-desktop-search-input {
@@ -1191,11 +1200,12 @@ justify-content: space-between;
   border: none;
   outline: none;
   background-color: transparent;
+  font: inherit;
+  color: #BCC1CA;
+}
 
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  color: #565E6C;
+.networking-desktop-search p {
+  color: #000000;
 }
 
 .networking-desktop-filters {
@@ -1207,19 +1217,13 @@ justify-content: space-between;
 .networking-filter {
   height: 36px;
   padding: 0 16px;
-
   border: none;
   border-radius: 6px;
   background-color: transparent;
-
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 14px;
-  line-height: 22px;
   color: #565E6C;
 }
 
 .networking-filter--active {
-  background-color: #FEF0F9;
   color: #CE0A86;
 }
 
@@ -1238,10 +1242,10 @@ justify-content: space-between;
 
 .networking-desktop-card-name {
   margin: 0 0 4px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #171A1F;
+  color: #000000;
 }
 
 .networking-desktop-card-text {
@@ -1264,10 +1268,10 @@ justify-content: space-between;
 
 .networking-section-title {
   margin: 0 0 20px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #171A1F;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000
 }
 
 .networking-activity-list {
@@ -1280,7 +1284,6 @@ justify-content: space-between;
   align-items: center;
   gap: 16px;
   padding: 16px 0;
-  border-bottom: 1px solid #DEE1E6;
 }
 
 .networking-activity-avatar {
@@ -1299,14 +1302,7 @@ justify-content: space-between;
   margin: 0;
   font-size: 14px;
   line-height: 22px;
-  color: #171A1F;
-}
-
-.networking-activity-time {
-  margin: 2px 0 0;
-  font-size: 12px;
-  line-height: 20px;
-  color: #9095A0;
+  color: #565E6C;
 }
 
 .networking-suggestions {
@@ -1327,21 +1323,15 @@ justify-content: space-between;
 
 .networking-suggestion-name {
   margin: 0 0 8px;
-
-  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-
-  color: #171A1F;
+  color: #000000;
 }
 
 .networking-suggestion-text {
   margin: 0 0 8px;
-
-  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-
   color: #565E6C;
 }
 
@@ -1350,10 +1340,6 @@ justify-content: space-between;
   height: 36px;
   margin-top: 4px;
 }
-
-
-
-
 
 }
 

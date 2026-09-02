@@ -59,34 +59,28 @@
     <div class="desktop-header-container">
       <div class="desktop-header-logo">
         <img
-          src="./src/assets/logos/it-alumni.png"
-          alt="Alumni Connect"
+          src="./src/assets/logos/logo-alumni.png"
+          alt=""
         >
       </div>
-
+      <h1 class="desktop-header-title">
+        Alumni Connect
+      </h1>
       <nav class="desktop-header-nav" aria-label="Main navigation">
         <ul class="desktop-header-nav-list">
           <li>
-            <a
-              class="desktop-header-nav-link"
-              href="./home.html"
-            >
+            <a class="desktop-header-nav-link" href="./home.html">
               Home
             </a>
           </li>
           <li>
-            <a
-              class="desktop-header-nav-link desktop-header-nav-link--active"
-              href="./networking.html"
-            >
+            <a 
+              class="desktop-header-nav-link" href="./networking.html">
               Networking
             </a>
           </li>
           <li>
-            <a
-              class="desktop-header-nav-link"
-              href="#"
-            >
+            <a class="desktop-header-nav-link" href="./job-opportunities.html">
               Job Opportunities
             </a>
           </li>
@@ -100,7 +94,7 @@
         >
         <img
           class="desktop-header-icon"
-          src="./src/assets/icons/notification.svg"
+          src="./src/assets/icons/bell.svg"
           alt="Notifications"
         >
         <img
@@ -110,7 +104,7 @@
         >
         <img
           class="desktop-header-avatar"
-          src="./src/assets/images/avatar.svg"
+          src="./src/assets/images/avatar-networking.svg"
           alt="Profile picture"
         >
       </div>
@@ -210,7 +204,7 @@
       </article>
     </section >
     <section class="networking-desktop desktop-only">
-      <div class="networking-desktop-tools">
+      <div class="networking-desktop-toolbar">
         <form class="networking-desktop-search">
           <div class="networking-desktop-search-field">
             <img
@@ -225,15 +219,18 @@
             >
           </div>
         </form>
+        <p>
+          Filters:
+        </p>
         <div class="networking-desktop-filters">
           <button
-            class="networking-filter networking-filter--active"
+            class="networking-filter"
             type="button"
           >
             Recent Activity
           </button>
           <button
-            class="networking-filter"
+            class="networking-filter networking-filter--active"
             type="button"
           >
             Popular
@@ -250,60 +247,49 @@
         <article class="networking-desktop-card">
           <h2 class="networking-desktop-card-name">
             Jane Smith
-          </h2>
-        
+          </h2>        
           <p class="networking-desktop-card-text">
             Co-Founder at ABC Inc.
-          </p>
-        
+          </p>       
           <p class="networking-desktop-card-text">
             New York, NY
           </p>
-        
           <button
-            class="btn btn--colored-dark btn--font-small networking-desktop-card-button"
+            class="btn networking-desktop-card-button btn--rounded btn--colored-dark btn--font-small"
             type="button"
           >
             Message
           </button>
-        </article>
-      
+        </article>     
         <article class="networking-desktop-card">
           <h2 class="networking-desktop-card-name">
             John Doe
-          </h2>
-        
+          </h2>       
           <p class="networking-desktop-card-text">
             Product Manager at XYZ Corp
-          </p>
-        
+          </p>        
           <p class="networking-desktop-card-text">
             San Francisco, CA
-          </p>
-        
+          </p>        
           <button
-            class="btn btn--colored-dark btn--font-small networking-desktop-card-button"
+            class="btn networking-desktop-card-button btn--rounded btn--colored-dark btn--font-small"
             type="button"
           >
             Message
           </button>
-        </article>
-      
+        </article>     
         <article class="networking-desktop-card">
           <h2 class="networking-desktop-card-name">
             Alice Johnson
-          </h2>
-        
+          </h2>       
           <p class="networking-desktop-card-text">
             Senior Developer at Tech Solutions
-          </p>
-        
+          </p>       
           <p class="networking-desktop-card-text">
             Remote
-          </p>
-        
+          </p>       
           <button
-            class="btn btn--colored-dark btn--font-small networking-desktop-card-button"
+            class="btn networking-desktop-card-button btn--rounded btn--colored-dark btn--font-small"
             type="button"
           >
             Message
@@ -312,18 +298,15 @@
         <article class="networking-desktop-card">
           <h2 class="networking-desktop-card-name">
             David Brown
-          </h2>
-        
+          </h2>       
           <p class="networking-desktop-card-text">
             Marketing Specialist at Brand Co
-          </p>
-        
+          </p>        
           <p class="networking-desktop-card-text">
             Chicago, IL
-          </p>
-        
+          </p>        
           <button
-            class="btn btn--colored-dark btn--font-small networking-desktop-card-button"
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-desktop-card-button"
             type="button"
           >
             Message
@@ -336,51 +319,30 @@
         </h2>
         <div class="networking-activity-list">
           <article class="networking-activity-item">
-            <img
-              class="networking-activity-avatar"
-              src="./src/assets/images/avatar.svg"
-              alt="John Doe"
-            >
-          
             <div class="networking-activity-info">
               <p class="networking-activity-text">
-                <strong>John Doe</strong> joined the network
-              </p>
-            
-              <p class="networking-activity-time">
-                2 hours ago
+                Jane Smith started following John Doe
               </p>
             </div>
           </article>
           <article class="networking-activity-item">
-            <img
-              class="networking-activity-avatar"
-              src="./src/assets/images/avatar.svg"
-              alt="Sarah Johnson"
-            >
-          
             <div class="networking-activity-info">
               <p class="networking-activity-text">
-                <strong>Sarah Johnson</strong> updated her profile
-              </p>
-            
-              <p class="networking-activity-time">
-                5 hours ago
+                David Brown and John Doe connected
               </p>
             </div>
           </article>
           <article class="networking-activity-item">
-            <img
-              class="networking-activity-avatar"
-              src="./src/assets/images/avatar.svg"
-              alt="Michael Brown"
-            >
             <div class="networking-activity-info">
               <p class="networking-activity-text">
-                <strong>Michael Brown</strong> made a new connection
+                John Doe shared "Top 10 Product Management Tips" article
               </p>
-              <p class="networking-activity-time">
-                Yesterday
+            </div>
+          </article>
+          <article class="networking-activity-item">
+            <div class="networking-activity-info">
+              <p class="networking-activity-text">
+                Jane Smith and David Brown connected
               </p>
             </div>
           </article>
@@ -392,9 +354,9 @@
         </h2>
         <div class="networking-suggestions-list">
           <article class="networking-suggestion">
-            <h3 class="networking-suggestion-name">
+            <p class="networking-suggestion-name">
               Jane Smith
-            </h3>
+            </p>
             <p class="networking-suggestion-text">
               Co-Founder at ABC Inc.
             </p>
@@ -402,16 +364,16 @@
               New York, NY
             </p>
             <button
-              class="btn btn--colored-dark btn--font-small networking-suggestion-button"
+              class="btn btn--rounded btn--colored-dark btn--font-small networking-suggestion-button"
               type="button"
             >
               Connect
             </button>
           </article>
           <article class="networking-suggestion">
-            <h3 class="networking-suggestion-name">
+            <p class="networking-suggestion-name">
               John Doe
-            </h3>
+            </p>
             <p class="networking-suggestion-text">
               Product Manager at XYZ Corp
             </p>
@@ -419,16 +381,16 @@
               San Francisco, CA
             </p>         
             <button
-              class="btn btn--colored-dark btn--font-small networking-suggestion-button"
+              class="btn btn--rounded btn--colored-dark btn--font-small networking-suggestion-button"
               type="button"
             >
               Connect
             </button>
           </article>        
           <article class="networking-suggestion">
-            <h3 class="networking-suggestion-name">
+            <p class="networking-suggestion-name">
               Alice Johnson
-            </h3>          
+            </p>          
             <p class="networking-suggestion-text">
               Senior Developer at Tech Solutions
             </p>          
@@ -436,16 +398,16 @@
               Remote
             </p>         
             <button
-              class="btn btn--colored-dark btn--font-small networking-suggestion-button"
+              class="btn btn--rounded btn--colored-dark btn--font-small networking-suggestion-button"
               type="button"
             >
               Connect
             </button>
           </article>       
           <article class="networking-suggestion">
-            <h3 class="networking-suggestion-name">
+            <p class="networking-suggestion-name">
               David Brown
-            </h3>         
+            </p>         
             <p class="networking-suggestion-text">
               Marketing Specialist at Brand Co
             </p>         
@@ -453,7 +415,7 @@
               Chicago, IL
             </p>          
             <button
-              class="btn btn--colored-dark btn--font-small networking-suggestion-button"
+              class="btn btn--rounded btn--colored-dark btn--font-small networking-suggestion-button"
               type="button"
             >
               Connect
