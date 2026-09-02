@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Wallpoet&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body class="page-job-opportunities">
+  <header class="mobile-header mobile-only">
+    <div class="mobile-header-container">
+      <div class="mobile-header-left">
+        <a href="./home.html" class="mobile-header-back">
+          <img
+            src="./src/assets/icons/arrow-left.svg"
+            alt="Go back"
+          >
+        </a>
+      </div>
+      <h1 class="mobile-header-title">
+        Job Portal
+      </h1>
+      <div class="mobile-header-right">
+        <img 
+          class="mobile-header-icon" 
+          src="./src/assets/icons/align-bottom.svg" 
+          alt=""
+        >
+        <img 
+          class="mobile-header-avatar" 
+          src="./src/assets/images/avatar.svg" 
+          alt="Profile picture"
+        >
+      </div> 
+    </div>
+    <form class="mobile-header-form">
+      <div class="mobile-header-field">
+        <img 
+          class="mobile-form-icon" 
+          src="./src/assets/icons/search.svg" 
+          alt=""
+        >
+        <input
+          class="mobile-header-input"
+          type="text" 
+          placeholder="Search alumni..." 
+          required
+        >
+      </div>
+    </form>
+  </header>
+  <header class="desktop-header desktop-only">
+    <div class="desktop-header-container">
+      <div class="desktop-header-logo">
+        <img
+          src="./src/assets/logos/logo-alumni.png"
+          alt=""
+        >
+      </div>
+      <h1 class="desktop-header-title">
+        Alumni Connect
+      </h1>
+      <nav class="desktop-header-nav" aria-label="Main navigation">
+        <ul class="desktop-header-nav-list">
+          <li>
+            <a class="desktop-header-nav-link" href="./home.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a 
+              class="desktop-header-nav-link" href="./networking.html">
+              Networking
+            </a>
+          </li>
+          <li>
+            <a class="desktop-header-nav-link" href="./job-opportunities.html">
+              Job Opportunities
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="desktop-header-actions">
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/search.svg"
+          alt="Search"
+        >
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/bell.svg"
+          alt="Notifications"
+        >
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/settings.svg"
+          alt="Settings"
+        >
+        <img
+          class="desktop-header-avatar"
+          src="./src/assets/images/avatar-networking.svg"
+          alt="Profile picture"
+        >
+      </div>
+    </div>
+  </header>
+  <main class="job-opportunities-main">
+    <section class="job-opportunities-filters mobile-only">
+      <div class="job-opportunities-filter">
+        <img
+          class="job-opportunities-filter-icon"
+          src="./src/assets/icons/filter.svg"
+          alt=""
+        >
+        <select name="industry" id="industry">
+          <option value="" selected>Industry</option>
+          <option value="">Marketing</option>
+          <option value="">Media</option>
+          <option value="">Health</option>
+        </select>
+      </div>
+      <div class="job-opportunities-filter">
+        <img
+          class="job-opportunities-filter-icon"
+          src="./src/assets/icons/filter.svg"
+          alt=""
+        >
+        <select name="experience" id="experience">
+          <option value="" selected>Experience Level</option>
+          <option value="">No experience</option>
+          <option value="">Junior</option>
+          <option value="">Senior</option>
+          
+        </select>
+      </div>
+    </section>
+    <section class="job-opportunities-main-container mobile-only" aria-label="Job Opportunities">
+      <article class="job-opportunities-card">
+        <div class="job-opportunities-card-info">
+          <h2 class="job-opportunities-card-name">
+            Marketing Role
+          </h2>
+          <p class="job-opportunities-card-text">
+            Marketing Specialist at XYZ
+          </p>
+          <p class="job-opportunities-card-text">
+            Remote | Apply by Nov 15
+          </p>
+          <button
+            class="btn btn--apply btn--white btn--font-xsmall"
+            type="button"
+          >
+          Apply Now
+          </button>
+        </div>
+        <img
+          class="job-opportunities-card-image"
+          src="./src/assets/images/image20.png"
+          alt=""
+        >
+      </article>
+      <article class="job-opportunities-card">
+        <div class="job-opportunities-card-info">
+          <h2 class="job-opportunities-card-name">
+            Software Engineer
+          </h2>
+          <p class="job-opportunities-card-text">
+            Software Engineer at ABC
+          </p>
+          <p class="job-opportunities-card-text">
+            San Francisco | Apply by Nov 20
+          </p>
+          <button
+            class="btn btn--apply btn--white btn--font-xsmall"
+            type="button"
+          >
+          Apply Now
+          </button>
+        </div>
+        <img
+          class="job-opportunities-card-image"
+          src="./src/assets/images/image20.png"
+          alt=""
+        >
+      </article>
+      <article class="job-opportunities-card">
+        <div class="job-opportunities-card-info">
+          <h2 class="job-opportunities-card-name">
+            Clinical Analyst
+          </h2>
+          <p class="job-opportunities-card-text">
+            Clinical Analyst at MediCare
+          </p>
+          <p class="job-opportunities-card-text">
+            New York | Apply by Nov 30
+          </p>
+          <button
+            class="btn btn--apply btn--white btn--font-xsmall"
+            type="button"
+          >
+          Apply Now
+          </button>
+        </div>
+        <img
+          class="job-opportunities-card-image"
+          src="./src/assets/images/image20.png"
+          alt=""
+        >
+      </article>
+      <article class="job-opportunities-card">
+        <div class="job-opportunities-card-info">
+          <h2 class="job-opportunities-card-name">
+            Content Writer
+          </h2>
+          <p class="job-opportunities-card-text">
+            Content Writer at WritersHub
+          </p>
+          <p class="job-opportunities-card-text">
+            Remote | Apply by Dec 5
+          </p>
+          <button
+            class="btn btn--apply btn--white btn--font-xsmall"
+            type="button"
+          >
+          Apply Now
+          </button>
+        </div>
+        <img
+          class="job-opportunities-card-image"
+          src="./src/assets/images/image20.png"
+          alt=""
+        >
+      </article>
+    </section >
+    <section class="job-opportunities-desktop desktop-only">
+      <div class="job-opportunities-desktop-toolbar">
+        <form class="job-opportunities-desktop-search">
+          <div class="job-opportunities-desktop-search-field">
+            <img
+              class="job-opportunities-desktop-search-icon"
+              src="./src/assets/icons/search.svg"
+              alt=""
+            >
+            <input
+              class="job-opportunities-desktop-search-input"
+              type="text"
+              placeholder="Search alumni..."
+            >
+          </div>
+        </form>
+        <p>
+          Filters:
+        </p>
+        <div class="job-opportunities-desktop-filters">
+          <button
+            class="job-opportunities-filter"
+            type="button"
+          >
+            Recent Activity
+          </button>
+          <button
+            class="job-opportunities-filter job-opportunities-filter--active"
+            type="button"
+          >
+            Popular
+          </button>
+          <button
+            class="job-opportunities-filter"
+            type="button"
+          >
+            Most Connected
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mobile-footer mobile-only">
+    <section class="mobile-footer-container">
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/home.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          Home
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/network.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          job-opportunities
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/briefcase.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          Job Portal
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/profile.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          Profile
+        </p> 
+      </div>
+    </section>
+  </footer>
+
+</body>
+</html>

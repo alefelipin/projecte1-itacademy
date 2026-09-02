@@ -1343,6 +1343,90 @@ body.page-networking {
 
 }
 
+/* ========================================
+  JOB PORTAL PAGE / JOB-OPPORTUNITIES.HTML - MOBILE ONLY
+======================================== */
+
+body.page-job-opportunities {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
+.job-opportunities-main {
+  flex: 1;
+}
+
+.job-opportunities-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.job-opportunities-filter {
+  display: flex;
+  width: 50%;
+  height: 22px;
+}
+
+.job-opportunities-filter select {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  color:#565E6C; 
+}
+
+.job-opportunities-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 30px;
+  margin-bottom: 13px;
+}
+
+.btn--apply {
+  width: 70px;
+  height: 32px;
+}
+
+.job-opportunities-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px;
+  border: 1px solid #171A1F12;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+}
+
+.job-opportunities-card-info {
+  grid-column: 1;
+  margin: 0;
+}
+
+.job-opportunities-card-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  color: #171A1F;
+}
+
+.job-opportunities-card-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+  color: #9095A0;
+}
+
+.job-opportunities-card-image {
+  width: auto;
+  height: auto;
+}
+
 
 
 
