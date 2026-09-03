@@ -705,225 +705,199 @@ a {
    SIGNUP PAGE / SIGNUP.HTML
 ======================================== */
 
-  .signup-container {
-    display: block;
-  }
+.signup-container {
+  display: block;
+}
+.signup-title {
+  margin: 0 0 32px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #000000;
+}
+.signup-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.signup-field {
+  display: flex;
+  justify-content: left;
+  width: 314.1px;
+  height: 42px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  background-color: #F3F4F6;
+}
+.signup-icon {
+  width: 20px;
+}
+.signup-input {
+  border: none;
+  background-color: transparent;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #BCC1CA;
+}
+.signup-terms {
+  display: flex;
+  justify-content: left;
+  width: 314.1px;
+  margin: 24px auto 0;
+}
+.signup-terms input {
+  position: absolute;
+  opacity: 0;
+}
+.signup-terms label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171A1F;
+}
+.signup-terms label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border: 0.72px solid #BCC1CA;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.signup-terms input:checked + label::before {
+  background-color: #CE0A86;
+  border-color: #CE0A86;
+  background-image: url("../src/assets/icons/Vector.svg");
+}
+.signup-button-container {
+  display: flex;
+  justify-content: center;
+  height: 44px;
+}
+.signup-button {
+  width: 324px;
+  height: 52px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.signup-separator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 40px;
+  width: 100%;
+  margin: 32px 0;
+}
+.signup-separator::before,
+.signup-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #BCC1CA;
+}
 
-  .signup-title {
-    margin: 0 0 32px;
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    line-height: 56px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #000000;
-  }
-  .signup-fields {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-  }
+.signup-separator span {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #9095A0;
+}
+.signup-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.signup-social-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 308.32px;
+  height: 44px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px; 
+}
 
-  .signup-field {
-    display: flex;
-    justify-content: left;
-    width: 314.1px;
-    height: 42px;
-    border: 1px solid #FFFFFF;
-    border-radius: 6px;
-    background-color: #F3F4F6;
-  }
+.btn--social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.signup-social-card--apple {
+  background-color: #FEF0F9;
+}
+.signup-social-card--google {
+  background-color: #FDF2F2;
+}
+.signup-social-card--facebook {
+  background-color: #F1F8FD;
+}
+.btn--apple {
+  background-color: #FEF0F9;
+  color: #FFFFFF;
+}
+.btn--google {
+  background-color: #FDF2F2;
+  color: #DE3B40;
+}
 
-  .signup-icon {
-    width: 20px;
-  }
+.btn--facebook {
+  background-color: #F1F8FD;
+  color: #379AE6;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 56px;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 298px;
+}
+.login-title {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
 
-  .signup-input {
-    border: none;
-    background-color: transparent;
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0%;
-    text-align: left;
-    color: #BCC1CA;
-  }
-
-  .signup-terms {
-    display: flex;
-    justify-content: left;
-    width: 314.1px;
-    margin: 24px auto 0;
-  }
-
-  .signup-terms input {
-    position: absolute;
-    opacity: 0;
-  }
-
-  .signup-terms label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    cursor: pointer;
-
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 22px;
-    color: #171A1F;
-  }
-
-  .signup-terms label::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-    border: 0.72px solid #BCC1CA;
-    border-radius: 3px;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .signup-terms input:checked + label::before {
-    background-color: #CE0A86;
-    border-color: #CE0A86;
-    background-image: url("../src/assets/icons/Vector.svg");
-  }
-
-  .signup-button-container {
-    display: flex;
-    justify-content: center;
-    height: 44px;
-  }
-
-  .signup-button {
-    width: 324px;
-    height: 52px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-
-  .signup-separator {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 40px;
-
-    width: 100%;
-    margin: 32px 0;
-  }
-
-  .signup-separator::before,
-  .signup-separator::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background-color: #BCC1CA;
-  }
-
-  .signup-separator span {
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #9095A0;
-  }
-
-  .signup-social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    width: 100%;
-  }
-
-  .signup-social-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 308.32px;
-    height: 44px;
-    border: 1px solid #FFFFFF;
-    border-radius: 6px; 
-  }
-
-  .btn--social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-  }
-
-  .signup-social-card--apple {
-    background-color: #FEF0F9;
-  }
-
-  .signup-social-card--google {
-    background-color: #FDF2F2;
-  }
-
-  .signup-social-card--facebook {
-    background-color: #F1F8FD;
-  }
-
-  .btn--apple {
-    background-color: #FEF0F9;
-    color: #FFFFFF;
-  }
-
-  .btn--google {
-    background-color: #FDF2F2;
-    color: #DE3B40;
-  }
-
-  .btn--facebook {
-    background-color: #F1F8FD;
-    color: #379AE6;
-  }
-
-  .login {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 56px;
-  }
-
-  .login-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 298px;
-  }
-
-  .login-title {
-    margin: 0;
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #000000;
-  }
-
-  .login-link {
-    text-decoration: none;
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #CE0A86;
-  }
+.login-link {
+  text-decoration: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #CE0A86;
+}
 
 /* ========================================
   SIGNUP PAGE / SIGNUP.HTML - DESKTOP ONLY
@@ -1077,270 +1051,269 @@ body.page-networking {
 
 @media (min-width: 1024px) {
 
-.networking-main-container.mobile-only {
-  display: none;
-}
-body.page-networking {
-  padding-left: 0;
-  padding-right: 0;
-}
-.desktop-header {
-  width: 100%;
-  height: 64px;
-}
-.desktop-header-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 64px;
-  padding: 0 28px;
-}
+  .networking-main-container.mobile-only {
+    display: none;
+  }
+  body.page-networking {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .desktop-header {
+    width: 100%;
+    height: 64px;
+  }
+  .desktop-header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding: 0 28px;
+  }
 
-.desktop-header-logo {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  margin-right: 24px;
-}
-.desktop-header-logo img {
-  display: block;
-  width: 36px;
-  height: 36px;
-}
+  .desktop-header-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 24px;
+  }
+  .desktop-header-logo img {
+    display: block;
+    width: 36px;
+    height: 36px;
+  }
 
-.desktop-header-title {
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 42px;
-  margin-right: 42px;
-}
+  .desktop-header-title {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    margin-right: 42px;
+  }
 
-.desktop-header-nav {
-  display: flex;
-  align-items: center;
-}
- .desktop-header-nav-list {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.desktop-header-nav-link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 64px;
-  padding: 0 8px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #565E6C;
-}
+  .desktop-header-nav {
+    display: flex;
+    align-items: center;
+  }
+   .desktop-header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .desktop-header-nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 0 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #565E6C;
+  }
 
-.desktop-header-actions {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-left: auto;
-}
-.desktop-header-icon {
-  width: 20px;
-  height: 20px;
-}
-.desktop-header-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.networking-desktop {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: 40px 70px 0;
-}
+  .desktop-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: auto;
+  }
+  .desktop-header-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .desktop-header-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .networking-desktop {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 40px 70px 0;
+  }
 
-.networking-desktop-toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
+  .networking-desktop-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 
-.networking-desktop-search {
-  width: 360px;
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-}
+  .networking-desktop-search {
+    width: 360px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+  }
 
-.networking-desktop-search-field {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 44px;
-  padding: 0 14px;
-  gap: 10px;
-  border-radius: 6px;
-  border: 1px solid #BCC1CA;
-  background-color: #FFFFFF;
-}
+  .networking-desktop-search-field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid #BCC1CA;
+    background-color: #FFFFFF;
+  }
 
-.networking-desktop-search-icon {
-  width: 16px;
-  height: 16px;
-  color: #171A1F;
-}
+  .networking-desktop-search-icon {
+    width: 16px;
+    height: 16px;
+    color: #171A1F;
+  }
 
-.networking-desktop-search-input {
-  width: 100%;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  font: inherit;
-  color: #BCC1CA;
-}
+  .networking-desktop-search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font: inherit;
+    color: #BCC1CA;
+  }
 
-.networking-desktop-search p {
-  color: #000000;
-}
+  .networking-desktop-search p {
+    color: #000000;
+  }
 
-.networking-desktop-filters {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+  .networking-desktop-filters {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 
-.networking-filter {
-  height: 36px;
-  padding: 0 16px;
-  border: none;
-  border-radius: 6px;
-  background-color: transparent;
-  color: #565E6C;
-}
+  .networking-filter {
+    height: 36px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #565E6C;
+  }
 
-.networking-filter--active {
-  color: #CE0A86;
-}
+  .networking-filter--active {
+    color: #CE0A86;
+  }
 
-.networking-desktop-profiles {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 32px;
-}
+  .networking-desktop-profiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
 
-.networking-desktop-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .networking-desktop-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.networking-desktop-card-name {
-  margin: 0 0 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #000000;
-}
+  .networking-desktop-card-name {
+    margin: 0 0 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+  }
 
-.networking-desktop-card-text {
-  margin: 0 0 14px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #565E6C;
-}
+  .networking-desktop-card-text {
+    margin: 0 0 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #565E6C;
+  }
 
-.networking-desktop-card-button {
-  width: 120px;
-  height: 36px;
-  margin-top: 2px;
-}
+  .networking-desktop-card-button {
+    width: 120px;
+    height: 36px;
+    margin-top: 2px;
+  }
 
-.networking-activity {
-  margin-top: 48px;
-}
+  .networking-activity {
+    margin-top: 48px;
+  }
 
-.networking-section-title {
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #000000
-}
+  .networking-section-title {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000
+  }
 
-.networking-activity-list {
-  display: flex;
-  flex-direction: column;
-}
+  .networking-activity-list {
+    display: flex;
+    flex-direction: column;
+  }
 
-.networking-activity-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 0;
-}
+  .networking-activity-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+  }
 
-.networking-activity-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+  .networking-activity-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
-.networking-activity-info {
-  display: flex;
-  flex-direction: column;
-}
+  .networking-activity-info {
+    display: flex;
+    flex-direction: column;
+  }
 
-.networking-activity-text {
-  margin: 0;
-  font-size: 14px;
-  line-height: 22px;
-  color: #565E6C;
-}
+  .networking-activity-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    color: #565E6C;
+  }
 
-.networking-suggestions {
-  margin-top: 24px;
-}
+  .networking-suggestions {
+    margin-top: 24px;
+  }
 
-.networking-suggestions-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+  .networking-suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
-.networking-suggestion {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .networking-suggestion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.networking-suggestion-name {
-  margin: 0 0 8px;
-  font-size: 16px;
-  line-height: 26px;
-  color: #000000;
-}
+  .networking-suggestion-name {
+    margin: 0 0 8px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+  }
 
-.networking-suggestion-text {
-  margin: 0 0 8px;
-  font-size: 14px;
-  line-height: 22px;
-  color: #565E6C;
-}
+  .networking-suggestion-text {
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #565E6C;
+  }
 
-.networking-suggestion-button {
-  width: 120px;
-  height: 36px;
-  margin-top: 4px;
-}
-
+  .networking-suggestion-button {
+    width: 120px;
+    height: 36px;
+    margin-top: 4px;
+  }
 }
 
 /* ========================================
@@ -1540,19 +1513,17 @@ body.page-job-opportunities {
   color: #CE0A86;
 }
 
-.desktop-header-nav-link--active::after {
-  content: "";
-  position: absolute;
-  width: 137px;
-  height: 4px;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  border-radius: 2px;
-  background-color: #CE0A86;
-}
-
-
+  .desktop-header-nav-link--active::after {
+    content: "";
+    position: absolute;
+    width: 137px;
+    height: 4px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    background-color: #CE0A86;
+  }
 
 } 
 
