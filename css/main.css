@@ -1355,18 +1355,21 @@ body.page-job-opportunities {
   padding-right: 10px; 
 }
 
+.page-job-opportunities .mobile-header-form {
+  margin-bottom: 20px;
+}
+
 .job-opportunities-main {
   flex: 1;
 }
 
 .job-opportunities-filters {
   display: flex;
-  gap: 10px;
+  gap: 100px;
 }
 
 .job-opportunities-filter {
   display: flex;
-  width: 50%;
   height: 22px;
 }
 
@@ -1383,11 +1386,11 @@ body.page-job-opportunities {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 13px;
 }
 
-.btn--apply {
+.jobs-btn--mobile {
   width: 70px;
   height: 32px;
 }
@@ -1395,18 +1398,29 @@ body.page-job-opportunities {
 .job-opportunities-card {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
   padding: 10px;
   border: 1px solid #171A1F12;
   border-radius: 6px;
   background-color: #FFFFFF;
 }
 
-.job-opportunities-card-info {
-  grid-column: 1;
-  margin: 0;
+.job-opportunities-card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.job-opportunities-card-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .job-opportunities-card-name {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -1415,6 +1429,7 @@ body.page-job-opportunities {
 }
 
 .job-opportunities-card-text {
+  margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
@@ -1423,11 +1438,40 @@ body.page-job-opportunities {
 }
 
 .job-opportunities-card-image {
-  width: auto;
-  height: auto;
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
+/* ========================================
+  JOB PORTAL PAGE / JOB-OPPORTUNITIES.HTML - DESKTOP ONLY
+======================================== */
 
+@media (min-width: 1024px) {
+
+  .body.page-job-opportunities {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .job-opportunities-desktop {
+    width: 100%;
+    padding: 60px 80px 0;
+  }
+
+  .job-opportunities-desktop-title {
+    margin: 0 0 40px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+  }
+
+
+
+} 
 
 
 
