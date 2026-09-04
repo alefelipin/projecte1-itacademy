@@ -112,100 +112,9 @@
     </div>
   </header>
   <main class="networking-main">
-    <section class="networking-main-container mobile-only" aria-label="Networking">
-      <article class="networking-card">
-        <div class="networking-card-info">
-          <h2 class="networking-card-name">
-            John Doe
-          </h2>
-          <p class="networking-card-text">
-            Class of 2010
-          </p>
-          <p class="networking-card-text">
-            CEO at TechSolutions Inc.
-          </p>
-        </div>
-        <img
-          class="networking-card-image"
-          src="./src/assets/images/image20.png"
-          alt="John Doe"
-        >
-      </article>
-      <article class="networking-card">
-        <div class="networking-card-info">
-          <h2 class="networking-card-name">
-            Sarah Johnson
-          </h2>
-          <p class="networking-card-text">
-            Class of 2015
-          </p>
-          <p class="networking-card-text">
-            Marketing Director at GreenWave
-          </p>
-        </div>
-        <img
-          class="networking-card-image"
-          src="./src/assets/images/image20.png"
-          alt="Sarah Johnson"
-        >
-      </article>
-      <article class="networking-card">
-        <div class="networking-card-info">
-          <h2 class="networking-card-name">
-            Michael Brown
-          </h2>
-          <p class="networking-card-text">
-            Class of 2008
-          </p>
-          <p class="networking-card-text">
-            Founder of EduLearn Academy
-          </p>
-        </div>
-        <img
-          class="networking-card-image"
-          src="./src/assets/images/image20.png"
-          alt="Michael Brown"
-        >
-      </article>
-      <article class="networking-card">
-        <div class="networking-card-info">
-          <h2 class="networking-card-name">
-            Emily Davis
-          </h2>
-          <p class="networking-card-text">
-            Class of 2012
-          </p>
-          <p class="networking-card-text">
-            Research Scientist at BioTech Labs
-          </p>
-        </div>
-        <img
-          class="networking-card-image"
-          src="./src/assets/images/image20.png"
-          alt="Emily Davis"
-        >
-      </article>
-      <article class="networking-card">
-        <div class="networking-card-info">
-          <h2 class="networking-card-name">
-            James Lee
-          </h2>
-          <p class="networking-card-text">
-            Class of 2005
-          </p>
-          <p class="networking-card-text">
-            Managing Partner at Lee & Associates
-          </p>
-        </div>
-        <img
-          class="networking-card-image"
-          src="./src/assets/images/image20.png"
-          alt="James Lee"
-        >
-      </article>
-    </section >
-    <section class="networking-desktop desktop-only">
-      <div class="networking-desktop-toolbar">
+    
+    <section class="networking-desktop">
+      <div class="networking-desktop-toolbar desktop-only">
         <form class="networking-desktop-search">
           <div class="networking-desktop-search-field">
             <img
@@ -245,77 +154,219 @@
           </button>
         </div>
       </div>
-      <section class="networking-desktop-profiles" aria-label="Featured alumni">
-        <article class="networking-desktop-card">
-          <h2 class="networking-desktop-card-name">
-            Jane Smith
-          </h2>        
-          <p class="networking-desktop-card-text">
-            Co-Founder at ABC Inc
-          </p>       
-          <p class="networking-desktop-card-text">
-            New York, NY
+
+      <section class="networking-main-container" aria-label="Networking">
+      <article class="networking-card networking-card--desktop-search-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
+            John Doe
+          </h2>
+          <p class="networking-card-text networking-card-year">
+            Class of 2010
+          </p>
+          <p class="networking-card-text networking-card-job">
+            CEO at TechSolutions Inc.
+          </p>
+          <p class="networking-card-location desktop-only">
+            San Francisco, CA
+          </p> 
+          <button
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button desktop-only"
+            type="button"
+          >
+            Message
+          </button>
+        </div>
+        <img
+          class="networking-card-image"
+          src="./src/assets/images/image20.png"
+          alt="John Doe"
+        >
+      </article>
+      <article class="networking-card networking-card--desktop-search-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
+            Sarah Johnson
+          </h2>
+          <p class="networking-card-text networking-card-year">
+            Class of 2015
+          </p>
+          <p class="networking-card-text networking-card-job">
+            Marketing Director at GreenWave
           </p>
           <button
-            class="btn networking-desktop-card-button btn--rounded btn--colored-dark btn--font-small"
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button desktop-only"
             type="button"
           >
             Message
           </button>
-        </article>     
-        <article class="networking-desktop-card">
-          <h2 class="networking-desktop-card-name">
+        </div>
+        <img
+          class="networking-card-image"
+          src="./src/assets/images/image20.png"
+          alt="Sarah Johnson"
+        >
+      </article>
+      <article class="networking-card networking-card--desktop-search-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
+            Michael Brown
+          </h2>
+          <p class="networking-card-text networking-card-year">
+            Class of 2008
+          </p>
+          <p class="networking-card-text networking-card-job">
+            Founder of EduLearn Academy
+          </p>
+          <button
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button desktop-only"
+            type="button"
+          >
+            Message
+          </button>
+        </div>
+        <img
+          class="networking-card-image"
+          src="./src/assets/images/image20.png"
+          alt="Michael Brown"
+        >
+      </article>
+      <article class="networking-card networking-card--desktop-search-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
+            Emily Davis
+          </h2>
+          <p class="networking-card-text networking-card-year">
+            Class of 2012
+          </p>
+          <p class="networking-card-text networking-card-job">
+            Research Scientist at BioTech Labs
+          </p>
+          <button
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button desktop-only"
+            type="button"
+          >
+            Message
+          </button>
+        </div>
+        <img
+          class="networking-card-image"
+          src="./src/assets/images/image20.png"
+          alt="Emily Davis"
+        >
+      </article>
+      <article class="networking-card networking-card--desktop-search-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
+            James Lee
+          </h2>
+          <p class="networking-card-text networking-card-year">
+            Class of 2005
+          </p>
+          <p class="networking-card-text networking-card-job">
+            Managing Partner at Lee & Associates
+          </p>
+          <button
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button desktop-only"
+            type="button"
+          >
+            Message
+          </button>
+        </div>
+        <img
+          class="networking-card-image"
+          src="./src/assets/images/image20.png"
+          alt="James Lee"
+        >
+      </article>
+      <article class="networking-card desktop-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
+            Jane Smith
+          </h2>
+          <p class="networking-card-text networking-card-year">
+          </p>
+          <p class="networking-card-text networking-card-job">
+            Co-Founder at ABC Inc
+          </p>
+          <p class="networking-card-location">
+            New York, NY
+          </p>
+
+          <button
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button"
+            type="button"
+          >
+            Message
+          </button>
+        </div>
+      </article>
+      <article class="networking-card desktop-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
             John Doe
-          </h2>       
-          <p class="networking-desktop-card-text">
+          </h2>
+          <p class="networking-card-text networking-card-year">
+          </p>        
+          <p class="networking-card-text networking-card-job">
             Product Manager at XYZ Corp
-          </p>        
-          <p class="networking-desktop-card-text">
+          </p>       
+          <p class="networking-card-location">
             San Francisco, CA
-          </p>        
+          </p>       
           <button
-            class="btn networking-desktop-card-button btn--rounded btn--colored-dark btn--font-small"
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button"
             type="button"
           >
             Message
           </button>
-        </article>     
-        <article class="networking-desktop-card">
-          <h2 class="networking-desktop-card-name">
+        </div>
+      </article>
+      <article class="networking-card desktop-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
             Alice Johnson
-          </h2>       
-          <p class="networking-desktop-card-text">
+          </h2>
+          <p class="networking-card-text networking-card-year">
+          </p>       
+          <p class="networking-card-text networking-card-job">
             Senior Developer at Tech Solutions
-          </p>       
-          <p class="networking-desktop-card-text">
+          </p>        
+          <p class="networking-card-location">
             Remote
+          </p>        
+          <button
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button"
+            type="button"
+          >
+            Message
+          </button>
+        </div>
+      </article>
+      <article class="networking-card desktop-only">
+        <div class="networking-card-info">
+          <h2 class="networking-card-name">
+            David Brown
+          </h2>
+          <p class="networking-card-text networking-card-year">
+          </p>       
+          <p class="networking-card-text networking-card-job">
+            Marketing Specialist at Brand Co
+          </p>       
+          <p class="networking-card-location">
+            Chicago, IL
           </p>       
           <button
-            class="btn networking-desktop-card-button btn--rounded btn--colored-dark btn--font-small"
+            class="btn btn--rounded btn--colored-dark btn--font-small networking-card-button"
             type="button"
           >
             Message
           </button>
-        </article>
-        <article class="networking-desktop-card">
-          <h2 class="networking-desktop-card-name">
-            David Brown
-          </h2>       
-          <p class="networking-desktop-card-text">
-            Marketing Specialist at Brand Co
-          </p>        
-          <p class="networking-desktop-card-text">
-            Chicago, IL
-          </p>        
-          <button
-            class="btn btn--rounded btn--colored-dark btn--font-small networking-desktop-card-button"
-            type="button"
-          >
-            Message
-          </button>
-        </article>
-      </section>
-      <section class="networking-activity">
+        </div>
+      </article>
+    </section>
+
+      <section class="networking-activity desktop-only">
         <h2 class="networking-section-title">
           Recent Activity
         </h2>
@@ -350,7 +401,8 @@
           </article>
         </div>
       </section>
-      <section class="networking-suggestions">
+
+      <section class="networking-suggestions desktop-only">
         <h2 class="networking-section-title">
           Suggestions for You
         </h2>

@@ -1045,15 +1045,16 @@ body.page-networking {
   aspect-ratio: 112 / 76;
 }
 
+.networking-card.desktop-only {
+  display: none;
+}
+
 /* ========================================
   NETWORKING PAGE / NETWORKING.HTML - DESKTOP ONLY
 ======================================== */
 
 @media (min-width: 1024px) {
 
-  .networking-main-container.mobile-only {
-    display: none;
-  }
   body.page-networking {
     padding-left: 0;
     padding-right: 0;
@@ -1219,20 +1220,39 @@ body.page-networking {
     background-color: #CE0A86;
   }
 
-  .networking-desktop-profiles {
+  .networking-main-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
     margin-top: 24px;
   }
 
-  .networking-desktop-card {
+  .networking-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0;
+    border: none;
+    border-radius: 0;
   }
 
-  .networking-desktop-card-name {
+  .networking-card.desktop-only {
+    display: flex;
+  }
+
+  .networking-card--desktop-search-only {
+    display: none;
+  }
+
+  .networking-card-year {
+    display: none;
+  }
+
+  .networking-card-image {
+    display: none;
+  }
+
+  .networking-card-name {
     margin: 0 0 4px;
     font-weight: 400;
     font-size: 16px;
@@ -1240,7 +1260,9 @@ body.page-networking {
     color: #000000;
   }
 
-  .networking-desktop-card-text {
+
+  .networking-card-job,
+  .networking-card-location {
     margin: 0 0 14px;
     font-weight: 400;
     font-size: 14px;
@@ -1248,7 +1270,7 @@ body.page-networking {
     color: #565E6C;
   }
 
-  .networking-desktop-card-button {
+  .networking-card-button {
     width: 120px;
     height: 36px;
     margin-top: 2px;
@@ -1263,7 +1285,7 @@ body.page-networking {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: #000000
+    color: #000000;
   }
 
   .networking-activity-list {
@@ -1434,11 +1456,7 @@ body.page-job-opportunities {
 
 @media (min-width: 1024px) {
 
-  .page-job-opportunities .mobile-only {
-    display: none;
-  }
-
-  .body.page-job-opportunities {
+  body.page-job-opportunities {
     padding-left: 0;
     padding-right: 0;
   }
