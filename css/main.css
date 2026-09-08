@@ -147,7 +147,7 @@ a {
 
 .mobile-header-form {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .mobile-header-field {
@@ -846,19 +846,24 @@ a {
   justify-content: center;
   width: auto;
 }
+
 .signup-social-card--apple {
   background-color: #FEF0F9;
 }
+
 .signup-social-card--google {
   background-color: #FDF2F2;
 }
+
 .signup-social-card--facebook {
   background-color: #F1F8FD;
 }
+
 .btn--apple {
   background-color: #FEF0F9;
   color: #FFFFFF;
 }
+
 .btn--google {
   background-color: #FDF2F2;
   color: #DE3B40;
@@ -868,12 +873,14 @@ a {
   background-color: #F1F8FD;
   color: #379AE6;
 }
+
 .login {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 56px;
 }
+
 .login-container {
   display: flex;
   align-items: center;
@@ -881,6 +888,7 @@ a {
   width: 100%;
   max-width: 298px;
 }
+
 .login-title {
   margin: 0;
   font-family: "Source Sans 3", sans-serif;
