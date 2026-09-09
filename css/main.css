@@ -340,7 +340,6 @@ a {
     font-size: 14px;
     color: #565E6C;
     line-height: 26px;
-    letter-spacing: 0;
     text-align: center;
     text-decoration: none;
   }
@@ -579,7 +578,6 @@ a {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: 0%;
     text-align: center;
     color: #FFFFFF;
   }
@@ -601,7 +599,6 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    letter-spacing: 0%;
     text-align: left;
     color: #DEE1E6;
   }
@@ -629,7 +626,6 @@ a {
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
-    letter-spacing: 0%;
     text-align: left;
     color: #FFFFFF;
   }
@@ -661,7 +657,6 @@ a {
     font-style: normal;
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: 0%;
     text-align: center;
     color: #FFFFFF;
   }
@@ -681,7 +676,6 @@ a {
     font-style: normal;
     font-size: 14px;
     line-height: 22px;
-    letter-spacing: 0%;
     text-align: center;
     color: #DEE1E6;
   }
@@ -708,6 +702,7 @@ a {
 .signup-container {
   display: block;
 }
+
 .signup-title {
   margin: 0 0 32px;
   font-family: "Source Sans 3", sans-serif;
@@ -715,7 +710,6 @@ a {
   font-style: normal;
   font-size: 40px;
   line-height: 56px;
-  letter-spacing: 0%;
   text-align: center;
   color: #000000;
 }
@@ -723,7 +717,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 30px;
 }
 .signup-field {
   display: flex;
@@ -745,7 +739,6 @@ a {
   font-style: normal;
   font-size: 16px;
   line-height: 26px;
-  letter-spacing: 0%;
   text-align: left;
   color: #BCC1CA;
 }
@@ -801,11 +794,12 @@ a {
 .signup-separator {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 40px;
   width: 100%;
-  margin: 32px 0;
+  gap: 12px;
+  padding: 20px;
+  margin: 32px 0 16px;
 }
+
 .signup-separator::before,
 .signup-separator::after {
   content: "";
@@ -884,7 +878,7 @@ a {
 .login-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   width: 100%;
   max-width: 298px;
 }
