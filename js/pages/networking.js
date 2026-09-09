@@ -8,12 +8,6 @@ const desktopSearchAlumni = desktopSearchInput.value.toUpperCase();
 
 const alumniCards = document.getElementsByClassName("networking-card");
 
-// networking-desktop-search-field
-
-
-
-
-
 desktopSearchInput.addEventListener("input", function() {
 
   for (let i = 0; i < cardText.length; i++ ) {
@@ -30,9 +24,6 @@ desktopSearchInput.addEventListener("input", function() {
   }
 
 });
-
-
-
 
 mobileSearchInput.addEventListener("input", function () {
 
