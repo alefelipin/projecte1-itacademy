@@ -35,14 +35,26 @@
         </ul> 
       </nav>
       <div class="header-buttons">
-        <button class="btn btn--rounded btn--white btn--font-small">
-          <i class="fa-solid fa-user-plus" aria-hidden="true"></i> 
-          Apunta't
-        </button>
-        <button class="btn btn--rounded btn--gradient btn--font-small">
-          <i class="fa-regular fa-user" aria-hidden="true"></i>
-          Com et veuen?
-        </button>
+        <div class="header-button-left">
+          <img 
+            class="landing-icon" 
+            src="./src/assets/icons/register.svg" 
+            alt=""
+          >
+          <button class="btn btn--header btn--rounded btn--white btn--font-small">
+            Apunta't
+          </button>
+        </div>
+        <div class="header-button-right">
+          <img 
+            class="landing-icon" 
+            src="./src/assets/icons/profile-white.svg" 
+            alt=""
+          >
+          <button class="btn btn--header btn--rounded btn--gradient btn--font-small">
+            Com et veuen?
+          </button>
+        </div> 
       </div>
     </div>
   </header>
@@ -63,7 +75,7 @@
           <button class="btn btn--join btn--soft btn--gradient btn--font-large" type="submit">
             Uneix-te
           </button>
-          <button class="btn btn--join btn--soft btn--white btn--font-large" type="submit">
+          <button class="btn btn--join btn--soft btn--white btn--font-large desktop-only" type="submit">
             Mira què fem
           </button>
         </div>
@@ -199,7 +211,11 @@
         </h3>
         <form class="newsletter-form">
           <div class="form-items">
-            <span class="icon-email">✉</span>
+            <img 
+            class="icon-email" 
+            src="./src/assets/icons/mail-white.svg" 
+            alt=""
+            >
             <input class="form-input" type="email" placeholder="El teu email" required>
           </div>
           <button class="form-button btn btn--gradient" type="submit">Subscriu-te</button>
