@@ -229,6 +229,14 @@ a {
   LANDING PAGE / INDEX.HTML
 ======================================== */
 
+body.page-landing {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
 .landing-header {
   width: 100%;
   height: 56px;
@@ -423,7 +431,6 @@ a {
   .benefits-title {
     display: flex;
     justify-content: center;
-
     font-family: "Source Sans 3", sans-serif;
     font-size: 32px;
     color:#171A1F;
@@ -442,6 +449,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 300px;
     min-height: 238px;
@@ -451,7 +459,6 @@ a {
     width: 300px;
     height: 104px;
     margin: 48px 0 42px;
-
     font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
     color: #565E6C;
@@ -460,11 +467,14 @@ a {
     font-weight: 400;
   }
 
+  .benefits-icon {
+    width: 32px;
+    height: 32px;
+  }
+
   .benefits-button {
     width: 140px;
     height: 44px;
-    margin: 0 0 0 80px;
-
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -555,6 +565,10 @@ a {
     color: #F3C63F;
   }
 
+  .slider-arrows {
+    margin-bottom: 40px;
+  }
+
   .previous-next {
     display: flex;
     justify-content: center;
@@ -569,7 +583,6 @@ a {
     align-items: center;
     width: 40px;
     height: 40px;
-
     border: none;
     border-radius: 50%;
     background-color: #F3F4F6;
@@ -584,7 +597,7 @@ a {
   .landing-footer-container {
     width: 100%;
     max-width: 1176px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   .footer-newsletter {
@@ -597,7 +610,6 @@ a {
     max-width: 234px;
     height: 30px;
     margin-top: 51px;
-
     font-family: "Source Sans 3", sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -612,30 +624,46 @@ a {
     margin-top: 83px;
   }
 
+  .form-email {
+    display: flex;
+    align-items: center;
+    border-radius: 22px 0 0 22px;
+    border: 1px solid #BCC1CA;
+    background-color: #00000000;
+  }
+
+  .form-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+  }
+
   .form-input {
     width: 263px;
     height: 43px;
     opacity: 1;
-    border-radius: 22px 0 0 22px;
-    border: 1px solid #BCC1CA;
-    background-color: #000000;
     font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     text-align: left;
+    background-color: #00000000;
+    border: none;
     color: #DEE1E6;
   }
 
   .form-button {
     border-radius: 0 22px 22px 0;
+    padding-left: 15px;
   }
 
   .footer-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 28px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #DEE1E6;
+    margin-bottom: 20px;;
   }
 
   .footer-logo {
@@ -674,7 +702,6 @@ a {
 
   .footer-nav a {
     text-decoration: none;
-
     font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -687,13 +714,10 @@ a {
   .footer-language select {
     width: 122px;
     height: 36px;
-
     padding: 0 12px;
-
     border: 1px solid #BCC1CA;
     border-radius: 6px;
     background-color: transparent;
-
     font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -710,7 +734,14 @@ a {
   }
 
   .footer-legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #FFFFFF;
+  }
+
+  .footer-legal p {
+    margin: 0;
   }
 
   .footer-legal a {
@@ -753,9 +784,12 @@ a {
   border-radius: 6px;
   background-color: #F3F4F6;
 }
+
 .signup-icon {
   width: 20px;
+  margin-left: 10px;
 }
+
 .signup-input {
   border: none;
   background-color: transparent;
@@ -766,17 +800,21 @@ a {
   line-height: 26px;
   text-align: left;
   color: #BCC1CA;
+  margin-left: 10px;
 }
+
 .signup-terms {
   display: flex;
   justify-content: left;
   width: 314.1px;
   margin: 24px auto 0;
 }
+
 .signup-terms input {
   position: absolute;
   opacity: 0;
 }
+
 .signup-terms label {
   display: flex;
   align-items: center;
@@ -789,6 +827,7 @@ a {
   line-height: 22px;
   color: #171A1F;
 }
+
 .signup-terms label::before {
   content: "";
   width: 16px;
@@ -800,22 +839,26 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .signup-terms input:checked + label::before {
   background-color: #CE0A86;
   border-color: #CE0A86;
   background-image: url("../src/assets/icons/Vector.svg");
 }
+
 .signup-button-container {
   display: flex;
   justify-content: center;
   height: 44px;
 }
+
 .signup-button {
   width: 324px;
   height: 52px;
   margin-top: 35px;
   margin-bottom: 35px;
 }
+
 .signup-separator {
   display: flex;
   align-items: center;
@@ -841,6 +884,7 @@ a {
   line-height: 26px;
   color: #9095A0;
 }
+
 .signup-social {
   display: flex;
   flex-direction: column;
@@ -848,6 +892,7 @@ a {
   gap: 16px;
   width: 100%;
 }
+
 .signup-social-card {
   display: flex;
   align-items: center;
@@ -867,29 +912,29 @@ a {
 }
 
 .signup-social-card--apple {
-  background-color: #FEF0F9;
+  background-color: #F5C7E2;
 }
 
 .signup-social-card--google {
-  background-color: #FDF2F2;
+  background-color: #F7CACA;
 }
 
 .signup-social-card--facebook {
-  background-color: #F1F8FD;
+  background-color: #CFE7FA;
 }
 
 .btn--apple {
-  background-color: #FEF0F9;
+  background-color: #F5C7E2;
   color: #FFFFFF;
 }
 
 .btn--google {
-  background-color: #FDF2F2;
+  background-color: #F7CACA;
   color: #DE3B40;
 }
 
 .btn--facebook {
-  background-color: #F1F8FD;
+  background-color: #CFE7FA;
   color: #379AE6;
 }
 
@@ -903,6 +948,7 @@ a {
 .login-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   width: 100%;
   max-width: 298px;
@@ -1478,10 +1524,14 @@ body.page-job-opportunities {
 }
 
 /* ========================================
-  JOB PORTAL PAGE / JOB-OPPORTUNITIES.HTML - DESKTOP ONLY
+  JOB PORTAL PAGE / JOB-OPPORTUNITIES.HTML - DESKTOP
 ======================================== */
 
 @media (min-width: 1024px) {
+
+  .page-job-opportunities .mobile-only {
+  display: none;
+  }
 
   body.page-job-opportunities {
     padding-left: 0;

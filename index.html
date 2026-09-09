@@ -41,7 +41,11 @@
             src="./src/assets/icons/register.svg" 
             alt=""
           >
-          <button class="btn btn--header btn--rounded btn--white btn--font-small">
+          <button 
+            class="btn btn--header btn--rounded btn--white btn--font-small"
+            type="button"
+            onclick="window.location.href='./signup.html'"
+          >
             Apunta't
           </button>
         </div>
@@ -51,7 +55,11 @@
             src="./src/assets/icons/profile-white.svg" 
             alt=""
           >
-          <button class="btn btn--header btn--rounded btn--gradient btn--font-small">
+          <button 
+            class="btn btn--header btn--rounded btn--gradient btn--font-small"
+            type="button"
+            onclick="window.location.href='./networking.html'"
+            >
             Com et veuen?
           </button>
         </div> 
@@ -67,15 +75,23 @@
           src="./src/assets/logos/it-alumni.png" 
           alt="ITAlumni"
         >
-        <h1 id="hero-title" class="hero-title desktop-only">Benvinguts, alumni</h1>
+        <h1 id="hero-title" class="hero-title desktop-only">Benvinguts, Alumni</h1>
         <p class="hero-description mobile-only">
           Connectant i empoderant a la nostra comunitat global d'alumnes
         </p>
         <div class="hero-buttons">
-          <button class="btn btn--join btn--soft btn--gradient btn--font-large" type="submit">
+          <button 
+            class="btn btn--join btn--soft btn--gradient btn--font-large" 
+            type="button"
+            onclick="window.location.href='./signup.html'"
+          >
             Uneix-te
           </button>
-          <button class="btn btn--join btn--soft btn--white btn--font-large desktop-only" type="submit">
+          <button 
+            class="btn btn--join btn--soft btn--white btn--font-large desktop-only" 
+            type="button"
+            onclick="window.location.href='./job-opportunities.html'"
+          >
             Mira què fem
           </button>
         </div>
@@ -93,29 +109,62 @@
         </h2>
         <div class="benefits-list">
           <article class="benefits-card">
+            <img
+            class="benefits-icon"
+            src="./src/assets/icons/icon__Hat.svg"
+            alt=""
+            >
             <p>
               Comparteix i no perdis el contacte: Puja els
               teus moments importants, explica com va tot
               i queda amb els companys. Una xarxa per
               estar més a prop.
             </p>
-            <button class="btn benefits-button btn--rounded btn--gradient">Apunta't ja</button>
+            <button 
+              class="btn benefits-button btn--rounded btn--gradient"
+              type="button"
+              onclick="window.location.href='./networking.html'"
+              >
+                Apunta't ja
+            </button>
           </article>
           <article class="benefits-card">
+            <img
+            class="benefits-icon"
+            src="./src/assets/icons/icon__Comments.svg"
+            alt=""
+            >
             <p>
               Participa en discussions: Intercanvia
               coneixements, punts de vista i opinions
               sobre temes que t'interessen. 
             </p>
-            <button class="btn benefits-button btn--rounded btn--colored-light">Apunta't ja</button>
+            <button 
+              class="btn benefits-button btn--rounded btn--colored-light"
+              type="button"
+              onclick="window.location.href='./networking.html'"
+              >
+                Apunta't ja
+            </button>
           </article>
           <article class="benefits-card">
+            <img
+            class="benefits-icon"
+            src="./src/assets/icons/icon__a-add.svg"
+            alt=""
+            >
             <p>
               Xarxa Alumni: Connecta amb companys de
               promoció, fes noves amistats i crea records
               per durar tota la vida
             </p>
-            <button class="btn benefits-button btn--rounded btn--colored-light">Apunta't ja</button>
+            <button 
+              class="btn benefits-button btn--rounded btn--colored-light"
+              type="button"
+              onclick="window.location.href='./networking.html'"
+              >
+                Apunta't ja
+            </button>
           </article>
         </div> 
       </div>
@@ -183,23 +232,16 @@
           </blockquote>
         </article>
       </div>
-          
-      <div class="previous-next">
-        <button 
-          class="nav-btn prev-btn"
-          type="button"
-          aria-label="Mostrar la pàgina anterior"
-          >
-            &#10094;
-        </button>
-        <button 
-          class="nav-btn next-btn"
-          type="button"
-          aria-label="Mostrar la pàgina següent"
-          >
-          &#10095;
-        </button>
-      </div>
+      <div class="slider-arrows">
+        <div class="previous-next">
+          <a href="#" aria-label="Mostrar la pàgina anterior">
+            <img src="./src/assets/icons/back.svg" class="icon-back" alt=""></img>
+          </a>
+          <a href="#" aria-label="Mostrar la pàgina següent">
+            <img src="./src/assets/icons/next.svg" class="icon-next" alt=""></img>
+          </a>
+        </div>
+      </div> 
     </section>
   </main>
 
@@ -210,13 +252,18 @@
           "No et perdis res, subscriu-te!""
         </h3>
         <form class="newsletter-form">
-          <div class="form-items">
+          <div class="form-email">
             <img 
-            class="icon-email" 
+            class="form-icon" 
             src="./src/assets/icons/mail-white.svg" 
             alt=""
             >
-            <input class="form-input" type="email" placeholder="El teu email" required>
+            <input 
+              class="form-input" 
+              type="email" 
+              placeholder="El teu email" 
+              required
+            >
           </div>
           <button class="form-button btn btn--gradient" type="submit">Subscriu-te</button>
         </form>
@@ -248,7 +295,7 @@
               <a href="#">FAQs</a>
             </li>
             <li>
-              <a href="#">Oportunitats laborals</a>
+              <a href="./job-opportunities.html">Oportunitats laborals</a>
             </li>
           </ul>
         </nav>
@@ -263,12 +310,18 @@
         </div>
         <div class="footer-legal">
           <p>&copy; 2024 Brand, Inc. • <a href="#">Privadesa</a> • <a href="#">Termes d'ús</a></p>
-          <p><a href="#">Mapa del lloc</a></p>
+          <p> • <a href="#">Mapa del lloc</a></p>
         </div>
         <div class="footer-social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/?locale=ca_ES" aria-label="Facebook">
+            <img src="./src/assets/icons/facebook.svg" class="icon-facebook" alt="facebook"></img>
+          </a>
+          <a href="https://es.linkedin.com/" aria-label="LinkedIn">
+            <img src="./src/assets/icons/linkedin.svg" class=icon-linkedin" alt="linkedin"></img>
+          </a>
+          <a href="https://www.youtube.com/" aria-label="YouTube">
+            <img src="./src/assets/icons/youtube.svg" class="icon-youtube" alt="youtube"></img>
+          </a>
         </div>
       </section>
     </div>
