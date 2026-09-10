@@ -225,6 +225,10 @@ a {
   text-align: center;
 }
 
+.mobile-footer-text a {
+  text-decoration: none;
+}
+
 .mobile-footer-text--active {
   color: #CE0A86;
 }
