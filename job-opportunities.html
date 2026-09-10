@@ -118,11 +118,12 @@
           src="./src/assets/icons/filter.svg"
           alt=""
         >
-        <select name="industry" id="industry">
+        <select name="industry" id="select-industry">
           <option value="" selected>Industry</option>
-          <option value="">Marketing</option>
-          <option value="">Media</option>
-          <option value="">Health</option>
+          <option value="marketing">Marketing</option>
+          <option value="human resources">Human Resources</option>
+          <option value="software">IT / Software </option>
+          <option value="health">Health</option>
         </select>
       </div>
       <div class="job-opportunities-filter">
@@ -131,11 +132,14 @@
           src="./src/assets/icons/filter.svg"
           alt=""
         >
-        <select name="experience" id="experience">
+        <select name="experience" id="select-experience">
           <option value="" selected>Experience Level</option>
-          <option value="">No experience</option>
-          <option value="">Junior</option>
-          <option value="">Senior</option>
+          <option value="none">No experience</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="back-end">Back-end</option>
+          <option value="front-end">Front-end</option>
+          <option value="full-stack">Full-stack</option>
           
         </select>
       </div>
@@ -151,6 +155,12 @@
           </p>
           <p class="job-opportunities-card-text">
             Remote | Apply by Nov 15
+          </p>
+          <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+            Industry: ""
+          </p>
+          <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+            Experience required: junior / Stack: Front-end
           </p>
           <button
             class="btn btn--white btn--font-xsmall jobs-btn--mobile"
@@ -178,6 +188,12 @@
           <p class="job-opportunities-card-text">
             San Francisco | Apply by Nov 20
           </p>
+          <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+            Industry: IT 
+          </p>
+          <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+            Experience required: senior / / Stack: Full-stack
+          </p>
           <button
             class="btn btn--white btn--font-xsmall jobs-btn--mobile"
             type="button"
@@ -203,6 +219,12 @@
           </p>
           <p class="job-opportunities-card-text">
             New York | Apply by Nov 30
+          </p>
+          <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+            Industry: Health
+          </p>
+          <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+            Experience required: junior / Stack: Back-end
           </p>
           <button
             class="btn btn--white btn--font-xsmall jobs-btn--mobile"
@@ -230,6 +252,12 @@
           <p class="job-opportunities-card-text">
             Remote | Apply by Dec 5
           </p>
+          <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+            Industry: Marketing
+          </p>
+          <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+            Experience required: none / Stack: Front-end
+          </p>
           <button
             class="btn btn--white btn--font-xsmall jobs-btn--mobile"
             type="button"
@@ -246,10 +274,45 @@
         </div>  
       </article>
     </section >
-    <section class="job-opportunities-desktop desktop-only">
-      <h2 class="job-opportunities-desktop-title">
+    <div>
+      <h2 class="job-opportunities-desktop-title desktop-only">
         Jobs
       </h2>
+    </div>
+    <section class="job-opportunities-filters desktop-only">
+      <div class="job-opportunities-filter">
+        <img
+          class="job-opportunities-filter-icon"
+          src="./src/assets/icons/filter.svg"
+          alt=""
+        >
+        <select name="industry" id="industry">
+          <option value="" selected>Industry</option>
+          <option value="marketing">Marketing</option>
+          <option value="human resources">Human Resources</option>
+          <option value="software">IT / Software </option>
+          <option value="health">Health</option>
+        </select>
+      </div>
+      <div class="job-opportunities-filter">
+        <img
+          class="job-opportunities-filter-icon"
+          src="./src/assets/icons/filter.svg"
+          alt=""
+        >
+        <select name="experience" id="experience">
+          <option value="" selected>Experience Level</option>
+          <option value="none">No experience</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="back-end">Back-end</option>
+          <option value="front-end">Front-end</option>
+          <option value="full-stack">Full-stack</option>
+          
+        </select>
+      </div>
+    </section>
+    <section class="job-opportunities-desktop desktop-only">
       <div class="job-opportunities-desktop-grid">
         <article class="job-opportunities-desktop-card">
           <div class="job-opportunities-desktop-card-info">
@@ -261,6 +324,12 @@
             </p>
             <p class="job-opportunities-desktop-card-text">
               Posted 3 days ago
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Industry: IT 
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Experience required: senior / / Stack: Full-stack
             </p>
             <button
               class="btn btn--white btn--font-xsmall jobs-btn--desktop"
@@ -288,6 +357,12 @@
             <p class="job-opportunities-desktop-card-text">
               Posted 1 week ago
             </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Industry: Marketing 
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Experience required: senior / / Stack: Full-stack
+            </p>
             <button
               class="btn btn--white btn--font-xsmall jobs-btn--desktop"
               type="button"
@@ -313,6 +388,12 @@
             </p>
             <p class="job-opportunities-desktop-card-text">
               Posted 2 days ago
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Industry: IT 
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Experience required: senior / / Stack: Back-end
             </p>
             <button
               class="btn btn--white btn--font-xsmall jobs-btn--desktop"
@@ -340,6 +421,12 @@
             <p class="job-opportunities-desktop-card-text">
               Posted 5 days ago
             </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Industry: IT 
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Experience required: junior / / Stack: Front-end
+            </p>
             <button
               class="btn btn--white btn--font-xsmall jobs-btn--desktop"
               type="button"
@@ -366,6 +453,12 @@
             <p class="job-opportunities-desktop-card-text">
               Posted 1 day ago
             </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Industry: Marketing
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Experience required: none / / Stack: Back-end
+            </p>
             <button
               class="btn btn--white btn--font-xsmall jobs-btn--desktop"
               type="button"
@@ -391,6 +484,12 @@
             </p>
             <p class="job-opportunities-desktop-card-text">
               Posted 4 days ago
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Industry: Human Resources / HR 
+            </p>
+            <p class="job-opportunities-card-text job-opportunities-card-text--hidden">
+              Experience required: senior / / Stack: Full-stack
             </p>
             <button
               class="btn btn--white btn--font-xsmall jobs-btn--desktop"
@@ -434,9 +533,9 @@
       <div class="mobile-footer-item">
         <img 
           class="mobile-footer-icon" 
-          src="./src/assets/icons/briefcase.svg" 
+          src="./src/assets/icons/briefcase-active.svg" 
           alt="">
-        <p class="mobile-footer-text">
+        <p class="mobile-footer-text  mobile-footer-text--active">
           Job Portal
         </p> 
       </div>

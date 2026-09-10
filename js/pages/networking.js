@@ -14,8 +14,6 @@ mobileSearchInput.addEventListener("input", function () {
 
     const cardText = alumniCards[i].textContent.toUpperCase();
 
-    console.log(cardText);
-
     if ( cardText.includes(mobileSearchAlumni) ) {
       alumniCards[i].style.display = "";
     } else {

@@ -225,6 +225,10 @@ a {
   text-align: center;
 }
 
+.mobile-footer-text--active {
+  color: #CE0A86;
+}
+
 /* ========================================
   LANDING PAGE / INDEX.HTML
 ======================================== */
@@ -1442,9 +1446,15 @@ body.page-job-opportunities {
   flex: 1;
 }
 
-.job-opportunities-filters {
+.job-opportunities-filters.mobile-only {
   display: flex;
-  gap: 100px;
+  align-items: center;
+  justify-content: left;
+  gap: 60px;
+}
+
+.job-opportunities-desktop-title {
+  padding: 30px 10px 0;
 }
 
 .job-opportunities-filter {
@@ -1516,6 +1526,10 @@ body.page-job-opportunities {
   color: #9095A0;
 }
 
+.job-opportunities-card-text--hidden {
+  display: none;
+}
+
 .job-opportunities-card-image {
   width: 112px;
   height: 112px;
@@ -1550,6 +1564,14 @@ body.page-job-opportunities {
     line-height: 48px;
     text-align: center;
     color: #000000;
+  }
+
+  .job-opportunities-filters.desktop-only {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 80px;
+    gap: 100px;
   }
 
   .job-opportunities-desktop-grid {

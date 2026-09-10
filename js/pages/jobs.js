@@ -1,43 +1,71 @@
 "use strict"
 
-const mobileSearchInput = document.getElementById("mobile-search-alumni");
-const mobileSearchAlumni = mobileSearchInput.value.toUpperCase();
+const industrySelect = document.getElementById("select-industry");
+const experienceSelect = document.getElementById("select-experience");
 
-const desktopSearchInput = document.getElementById("desktop-search-alumni")
-const desktopSearchAlumni = desktopSearchInput.value.toUpperCase();
+const alumniCardsMobile = document.getElementsByClassName("job-opportunities-card");
+const alumniCardsDesktop = document.getElementsByClassName("job-opportunities-desktop-card");
 
-const alumniCards = document.getElementsByClassName("networking-card");
+function filterJobsByIndustry() {
 
-desktopSearchInput.addEventListener("input", function() {
+  const industrySearchText = industrySelect.value.toUpperCase();
 
-  for (let i = 0; i < cardText.length; i++ ) {
+  for (let i = 0; i < alumniCardsMobile.length; i++) {
 
-    const cardText = alumniCards[i].textContent.toUpperCase();
+    const cardTextMobile = alumniCardsMobile[i].textContent.toUpperCase();
 
-    console.log(cardText);
-
-    if ( cardText.includes(desktopSearchInput) ) {
-      alumniCards[i].style.display = "";
+    if ( cardTextMobile.includes(industrySearchText) ) {
+      alumniCardsMobile[i].style.display = "";
     } else {
-      alumniCards[i].style.display = "none";
+      alumniCardsMobile[i].style.display = "none";
     }
+
   }
 
-});
+  for (let j = 0; j < alumniCardsDesktop.length; j++) {
 
-mobileSearchInput.addEventListener("input", function () {
+    const cardTextDesktop = alumniCardsDesktop[j].textContent.toUpperCase();
 
-  for (let i = 0; i < alumniCards.length; i++) {
-
-    const cardText = alumniCards[i].textContent.toUpperCase();
-
-    console.log(cardText);
-
-    if ( cardText.includes(mobileSearchAlumni) ) {
-      alumniCards[i].style.display = "";
+    if ( cardTextDesktop.includes(industrySearchText) ) {
+      alumniCardsDesktop[j].style.display = "";
     } else {
-      alumniCards[i].style.display = "none";
+      alumniCardsDesktop[j].style.display = "none";
     }
+
   }
 
-});
+}
+
+function filterJobsByExperience() {
+
+  const experienceSearchText = experienceSelect.value.toUpperCase();
+
+  for (let i = 0; i < alumniCardsMobile.length; i++) {
+
+    const cardTextMobile = alumniCardsMobile[i].textContent.toUpperCase();
+
+    if ( cardTextMobile.includes(experienceSearchText) ) {
+      alumniCardsMobile[i].style.display = "";
+    } else {
+      alumniCardsMobile[i].style.display = "none";
+    }
+
+  }
+
+  for (let j = 0; j < alumniCardsDesktop.length; j++) {
+
+    const cardTextDesktop = alumniCardsDesktop[j].textContent.toUpperCase();
+
+    if ( cardTextDesktop.includes(experienceSearchText) ) {
+      alumniCardsDesktop[j].style.display = "";
+    } else {
+      alumniCardsDesktop[j].style.display = "none";
+    }
+
+  }
+
+}
+
+industrySelect.addEventListener("change", filterJobsByIndustry);
+experienceSelect.addEventListener("change", filterJobsByExperience);
+
