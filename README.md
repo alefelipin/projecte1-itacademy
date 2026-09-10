@@ -1,6 +1,6 @@
 # ITAlumni
 
-El proyecto denominado **Exalumni** se desarrolla en una plataforma web **mobile-first** orientada a la comunidad de exalumnos y exalumnas de **IT Academy de Barcelona Activa**.
+El proyecto denominado **ITAlumni** se desarrolla en una plataforma web **mobile-first** orientada a la comunidad de exalumnos y exalumnas de **IT Academy de Barcelona Activa**.
 
 ITAlumni nace para mantener activa la relación entre personas que han finalizado su formación en IT Academy, facilitando el **networking profesional**, el acceso a **oportunidades laborales** y, dentro del alcance definido para el producto, la participación en actividades y recursos de la comunidad.
 
