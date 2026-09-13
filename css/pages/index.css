@@ -73,6 +73,14 @@ body.page-landing {
   gap: 26px;
 }
 
+
+.btn--join {
+  width: 324px;
+  height: 52px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 /* ========================================
   LANDING PAGE / INDEX.HTML - DESKTOP ONLY
 ======================================== */
