@@ -758,63 +758,7 @@ body.page-landing {
 }
 
 
-/* ========================================
-  HOME PAGE / HOME.HTML - MOBILE & DESKTOP
-======================================== */
 
-body.page-home {
-  display: flex;
-  flex-direction: column;
-  min-height: 100svh;
-  padding-left: 10px;
-  padding-right: 10px; 
-}
-
-.home-main {
-  flex: 1;
-}
-
-.home-main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 10px;
-  padding: 20px;
-  gap: 15px;
-}
-
-.home-main-card {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.home-main-image {
-  width: 167px;
-  min-height: 156px;
-}
-
-.home-card-title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 22px;
-  color: #171A1F;
-  text-align: left;
-}
-
-.home-card-text {
-  margin: 0;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 20px;
-  color: #9095A0;
-  text-align: left;
-}
-
-.btn--home {
-  min-height: 32px;
-}
 
 /* ========================================
   NETWORKING PAGE / NETWORKING.HTML - MOBILE ONLY
