@@ -6,50 +6,40 @@ const experienceSelectMobile = document.getElementById("select-experience-mobile
 const industrySelectDesktop = document.getElementById("select-industry-desktop");
 const experienceSelectDesktop = document.getElementById("select-experience-desktop");
 
-const alumniCardsMobile = document.getElementsByClassName("job-opportunities-card");
-const alumniCardsDesktop = document.getElementsByClassName("job-opportunities-desktop-card");
+const jobCardsMobile = document.getElementsByClassName("job-opportunities-card");
+const jobCardsDesktop = document.getElementsByClassName("job-opportunities-desktop-card");
 
 
-function filterJobs() {
+function filterJobs(event) {
 
-  const industrySearchTextM = industrySelectMobile.value.toUpperCase();
-  const experienceSearchTextM = experienceSelectMobile.value.toUpperCase();
-  const industrySearchTextD = industrySelectDesktop.value.toUpperCase();
-    const experienceSearchTextD = experienceSelectDesktop.value.toUpperCase();
+  const isDesktop = event.target.id.endsWith("-desktop");
 
-  for (let i = 0; i < alumniCardsMobile.length; i++) {
+  const industrySelect = isDesktop ? industrySelectDesktop : industrySelectMobile;
+  
+  const experienceSelect = isDesktop ? experienceSelectDesktop : experienceSelectMobile;
 
-    const cardTextMobile = alumniCardsMobile[i].textContent.toUpperCase();
+  const jobCards = isDesktop ? jobCardsDesktop: jobCardsMobile;
 
-    const industryCheck = cardTextMobile.includes(industrySearchTextM);
-    const experienceCheck = cardTextMobile.includes(experienceSearchTextM);
+  const industrySearchText = industrySelect.value.toUpperCase();
+  const experienceSearchText = experienceSelect.value.toUpperCase();
 
-    console.log(cardTextMobile);
-
-    if (industryCheck && experienceCheck) {
-      alumniCardsMobile[i].style.display = "";
-    } else {
-      alumniCardsMobile[i].style.display = "none";
-    }
-
-  } 
-
-  for (let j = 0; j < alumniCardsDesktop.length; j++) {
+  for (let j = 0; j < jobCards.length; j++) {
 
 
-    const cardTextDesktop = alumniCardsDesktop[j].textContent.toUpperCase();
+    const cardText = jobCards[j].textContent.toUpperCase();
 
-    const industryCheck = cardTextDesktop.includes(industrySearchTextD);
-    const experienceCheck = cardTextDesktop.includes(experienceSearchTextD);
+    const industryCheck = cardText.includes(industrySearchText);
+    const experienceCheck = cardText.includes(experienceSearchText);
 
     if (industryCheck && experienceCheck) {
-      alumniCardsDesktop[j].style.display = "";
-    } else {
-      alumniCardsDesktop[j].style.display = "none";
-    }
 
+      jobCards[j].style.display = "";
+
+    } else {
+
+      jobCards[j].style.display = "none";
+    }
   }
-
 }
 
 industrySelectMobile.addEventListener("change", filterJobs);
