@@ -1,4 +1,148 @@
-"use strict"
+"use strict";
+
+const jobsMobileContainer = document.getElementById("jobs-mobile-container");
+const jobsDesktopContainer = document.getElementById("jobs-desktop-container");
+
+function formatJobValue(value) {
+
+  return value.charAt(0).toUpperCase() + value.slice(1);
+
+}
+
+function renderJobs() {
+
+  jobsData.forEach(job => {
+
+    jobsMobileContainer.innerHTML += `
+      <article
+        class="job-opportunities-card"
+        data-industry="${job.industry}"
+        data-experience="${job.experience}"
+        data-stack="${job.stack}"
+      >
+        <div class="job-opportunities-card-left">
+
+          <h2 class="job-opportunities-card-name">
+            ${job.title}
+          </h2>
+
+          <p class="job-opportunities-card-text">
+            ${job.description}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            Company: ${job.company}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            ${job.location}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            ${job.date}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            Industry: ${formatJobValue(job.industry)}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            Experience: ${formatJobValue(job.experience)}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            Stack: ${formatJobValue(job.stack)}
+          </p>
+
+          <button
+            class="btn btn--white btn--font-xsmall jobs-btn--mobile"
+            type="button"
+          >
+            ${job.buttonText}
+          </button>
+
+        </div>
+
+        <div class="job-opportunities-card-right">
+
+          <img
+            class="job-opportunities-card-image"
+            src="${job.image}"
+            alt="${job.title}"
+          >
+
+        </div>
+      </article>
+    `;
+
+
+    jobsDesktopContainer.innerHTML += `
+      <article
+        class="job-opportunities-desktop-card"
+        data-industry="${job.industry}"
+        data-experience="${job.experience}"
+        data-stack="${job.stack}"
+      >
+        <div class="job-opportunities-desktop-card-info">
+
+          <h3 class="job-opportunities-desktop-card-position">
+            ${job.title}
+          </h3>
+
+          <p class="job-opportunities-desktop-card-text">
+            ${job.description}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            Company: ${job.company}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            ${job.location}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            ${job.date}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            Industry: ${formatJobValue(job.industry)}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            Experience: ${formatJobValue(job.experience)}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            Stack: ${formatJobValue(job.stack)}
+          </p>
+
+          <button
+            class="btn btn--white btn--font-xsmall jobs-btn--desktop"
+            type="button"
+          >
+            ${job.buttonText}
+          </button>
+
+        </div>
+
+        <div class="job-opportunities-desktop-card-right">
+
+          <img
+            class="job-opportunities-desktop-card-image"
+            src="${job.image}"
+            alt="${job.title}"
+          >
+
+        </div>
+      </article>
+    `;
+
+  });
+
+}
+
+renderJobs();
 
 const industrySelectMobile = document.getElementById("select-industry-mobile");
 const experienceSelectMobile = document.getElementById("select-experience-mobile");

@@ -9,7 +9,7 @@ const jobsData = [
     industry: "marketing",
     experience: "junior",
     stack: "front-end",
-    image: "./src/assets/images/image20.png",
+    image: "./src/assets/images/product-manager.png",
     buttonText: "Apply Now"
   },
   {
@@ -21,7 +21,7 @@ const jobsData = [
     industry: "software",
     experience: "senior",
     stack: "full-stack",
-    image: "./src/assets/images/image20.png",
+    image: "./src/assets/images/software-engineer.png",
     buttonText: "Apply Now"
   },
   {
@@ -45,7 +45,7 @@ const jobsData = [
     industry: "marketing",
     experience: "none",
     stack: "front-end",
-    image: "./src/assets/images/image20.png",
+    image: "./src/assets/images/ux-designer.png",
     buttonText: "Apply Now"
   },
   {
