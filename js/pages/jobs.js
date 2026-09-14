@@ -1,4 +1,148 @@
-"use strict"
+"use strict";
+
+const jobsMobileContainer = document.getElementById("jobs-mobile-container");
+const jobsDesktopContainer = document.getElementById("jobs-desktop-container");
+
+function formatJobValue(value) {
+
+  return value.charAt(0).toUpperCase() + value.slice(1);
+
+}
+
+function renderJobs() {
+
+  jobsData.forEach(job => {
+
+    jobsMobileContainer.innerHTML += `
+      <article
+        class="job-opportunities-card"
+        data-industry="${job.industry}"
+        data-experience="${job.experience}"
+        data-stack="${job.stack}"
+      >
+        <div class="job-opportunities-card-left">
+
+          <h2 class="job-opportunities-card-name">
+            ${job.title}
+          </h2>
+
+          <p class="job-opportunities-card-text">
+            ${job.description}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            Company: ${job.company}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            ${job.location}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            ${job.date}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            Industry: ${formatJobValue(job.industry)}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            Experience: ${formatJobValue(job.experience)}
+          </p>
+
+          <p class="job-opportunities-card-text">
+            Stack: ${formatJobValue(job.stack)}
+          </p>
+
+          <button
+            class="btn btn--white btn--font-xsmall jobs-btn--mobile"
+            type="button"
+          >
+            ${job.buttonText}
+          </button>
+
+        </div>
+
+        <div class="job-opportunities-card-right">
+
+          <img
+            class="job-opportunities-card-image"
+            src="${job.image}"
+            alt="${job.title}"
+          >
+
+        </div>
+      </article>
+    `;
+
+
+    jobsDesktopContainer.innerHTML += `
+      <article
+        class="job-opportunities-desktop-card"
+        data-industry="${job.industry}"
+        data-experience="${job.experience}"
+        data-stack="${job.stack}"
+      >
+        <div class="job-opportunities-desktop-card-info">
+
+          <h3 class="job-opportunities-desktop-card-position">
+            ${job.title}
+          </h3>
+
+          <p class="job-opportunities-desktop-card-text">
+            ${job.description}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            Company: ${job.company}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            ${job.location}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            ${job.date}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            Industry: ${formatJobValue(job.industry)}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            Experience: ${formatJobValue(job.experience)}
+          </p>
+
+          <p class="job-opportunities-desktop-card-text">
+            Stack: ${formatJobValue(job.stack)}
+          </p>
+
+          <button
+            class="btn btn--white btn--font-xsmall jobs-btn--desktop"
+            type="button"
+          >
+            ${job.buttonText}
+          </button>
+
+        </div>
+
+        <div class="job-opportunities-desktop-card-right">
+
+          <img
+            class="job-opportunities-desktop-card-image"
+            src="${job.image}"
+            alt="${job.title}"
+          >
+
+        </div>
+      </article>
+    `;
+
+  });
+
+}
+
+renderJobs();
 
 const industrySelectMobile = document.getElementById("select-industry-mobile");
 const experienceSelectMobile = document.getElementById("select-experience-mobile");
@@ -6,50 +150,40 @@ const experienceSelectMobile = document.getElementById("select-experience-mobile
 const industrySelectDesktop = document.getElementById("select-industry-desktop");
 const experienceSelectDesktop = document.getElementById("select-experience-desktop");
 
-const alumniCardsMobile = document.getElementsByClassName("job-opportunities-card");
-const alumniCardsDesktop = document.getElementsByClassName("job-opportunities-desktop-card");
+const jobCardsMobile = document.getElementsByClassName("job-opportunities-card");
+const jobCardsDesktop = document.getElementsByClassName("job-opportunities-desktop-card");
 
 
-function filterJobs() {
+function filterJobs(event) {
 
-  const industrySearchTextM = industrySelectMobile.value.toUpperCase();
-  const experienceSearchTextM = experienceSelectMobile.value.toUpperCase();
-  const industrySearchTextD = industrySelectDesktop.value.toUpperCase();
-    const experienceSearchTextD = experienceSelectDesktop.value.toUpperCase();
+  const isDesktop = event.target.id.endsWith("-desktop");
 
-  for (let i = 0; i < alumniCardsMobile.length; i++) {
+  const industrySelect = isDesktop ? industrySelectDesktop : industrySelectMobile;
+  
+  const experienceSelect = isDesktop ? experienceSelectDesktop : experienceSelectMobile;
 
-    const cardTextMobile = alumniCardsMobile[i].textContent.toUpperCase();
+  const jobCards = isDesktop ? jobCardsDesktop: jobCardsMobile;
 
-    const industryCheck = cardTextMobile.includes(industrySearchTextM);
-    const experienceCheck = cardTextMobile.includes(experienceSearchTextM);
+  const industrySearchText = industrySelect.value.toUpperCase();
+  const experienceSearchText = experienceSelect.value.toUpperCase();
 
-    console.log(cardTextMobile);
-
-    if (industryCheck && experienceCheck) {
-      alumniCardsMobile[i].style.display = "";
-    } else {
-      alumniCardsMobile[i].style.display = "none";
-    }
-
-  } 
-
-  for (let j = 0; j < alumniCardsDesktop.length; j++) {
+  for (let j = 0; j < jobCards.length; j++) {
 
 
-    const cardTextDesktop = alumniCardsDesktop[j].textContent.toUpperCase();
+    const cardText = jobCards[j].textContent.toUpperCase();
 
-    const industryCheck = cardTextDesktop.includes(industrySearchTextD);
-    const experienceCheck = cardTextDesktop.includes(experienceSearchTextD);
+    const industryCheck = cardText.includes(industrySearchText);
+    const experienceCheck = cardText.includes(experienceSearchText);
 
     if (industryCheck && experienceCheck) {
-      alumniCardsDesktop[j].style.display = "";
-    } else {
-      alumniCardsDesktop[j].style.display = "none";
-    }
 
+      jobCards[j].style.display = "";
+
+    } else {
+
+      jobCards[j].style.display = "none";
+    }
   }
-
 }
 
 industrySelectMobile.addEventListener("change", filterJobs);
