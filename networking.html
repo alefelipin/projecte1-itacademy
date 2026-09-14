@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Networking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Wallpoet&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/pages/networking.css">
+
+</head>
+<body class="page-networking">
+  <header class="mobile-header mobile-only">
+    <div class="mobile-header-container">
+      <div class="mobile-header-left">
+        <a href="./home.html" class="mobile-header-back">
+          <img
+            src="./src/assets/icons/arrow-left.svg"
+            alt="Go back"
+          >
+        </a>
+      </div>
+      <h1 class="mobile-header-title">
+        Networking
+      </h1>
+      <div class="mobile-header-right">
+        <img 
+          class="mobile-header-icon" 
+          src="./src/assets/icons/align-bottom.svg" 
+          alt=""
+        >
+        <img 
+          class="mobile-header-avatar" 
+          src="./src/assets/images/avatar.svg" 
+          alt="Profile picture"
+        >
+      </div> 
+    </div>
+    <form class="mobile-header-form">
+      <div class="mobile-header-field">
+        <img 
+          class="mobile-form-icon" 
+          src="./src/assets/icons/search.svg" 
+          alt=""
+        >
+        <input
+          type="text"
+          id="mobile-search-alumni"
+          class="mobile-header-input"
+          placeholder="Search alumni..." 
+          required
+        >
+      </div>
+    </form>
+  </header>
+  <header class="desktop-header desktop-only">
+    <div class="desktop-header-container">
+      <div class="desktop-header-logo">
+        <img
+          src="./src/assets/logos/logo-alumni.png"
+          alt=""
+        >
+      </div>
+      <h1 class="desktop-header-title">
+        Alumni Connect
+      </h1>
+      <nav class="desktop-header-nav" aria-label="Main navigation">
+        <ul class="desktop-header-nav-list">
+          <li>
+            <a class="desktop-header-nav-link" href="./home.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a 
+              class="desktop-header-nav-link desktop-header-nav-link--active" href="./networking.html">
+              Networking
+            </a>
+          </li>
+          <li>
+            <a class="desktop-header-nav-link" href="./job-opportunities.html">
+              Job Opportunities
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="desktop-header-actions">
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/search.svg"
+          alt="Search"
+        >
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/bell.svg"
+          alt="Notifications"
+        >
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/settings.svg"
+          alt="Settings"
+        >
+        <img
+          class="desktop-header-avatar"
+          src="./src/assets/images/avatar-networking.svg"
+          alt="Profile picture"
+        >
+      </div>
+    </div>
+  </header>
+  <main class="networking-main">
+    
+    <section class="networking-desktop">
+      <div class="networking-desktop-toolbar desktop-only">
+        <form class="networking-desktop-search">
+          <div class="networking-desktop-search-field">
+            <img
+              class="networking-desktop-search-icon"
+              src="./src/assets/icons/search.svg"
+              alt=""
+            >
+            <input
+              type="text"
+              id="desktop-search-alumni"
+              class="networking-desktop-search-input"
+              placeholder="Search alumni..."
+            >
+          </div>
+        </form>
+        <div class="networking-desktop-filters">
+          <p class="networking-filters-label">
+            Filters:
+          </p>
+          <button
+            class="networking-filter"
+            type="button"
+          >
+            Recent Activity
+          </button>
+          <button
+            class="networking-filter networking-filter--active"
+            type="button"
+          >
+            Popular
+          </button>
+          <button
+            class="networking-filter"
+            type="button"
+          >
+            Most Connected
+          </button>
+        </div>
+      </div>
+
+      <section
+        id="networking-cards-container"
+        class="networking-main-container" 
+        aria-label="Networking"
+      > 
+      
+      </section>
+
+      <section class="networking-activity desktop-only">
+        <h2 class="networking-section-title">
+          Recent Activity
+        </h2>
+        <div class="networking-activity-list">
+          <article class="networking-activity-item">
+            <div class="networking-activity-info">
+              <p class="networking-activity-text">
+                Jane Smith started following John Doe
+              </p>
+            </div>
+          </article>
+          <article class="networking-activity-item">
+            <div class="networking-activity-info">
+              <p class="networking-activity-text">
+                David Brown and John Doe connected
+              </p>
+            </div>
+          </article>
+          <article class="networking-activity-item">
+            <div class="networking-activity-info">
+              <p class="networking-activity-text">
+                John Doe shared "Top 10 Product Management Tips" article
+              </p>
+            </div>
+          </article>
+          <article class="networking-activity-item">
+            <div class="networking-activity-info">
+              <p class="networking-activity-text">
+                Jane Smith and David Brown connected
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="networking-suggestions desktop-only">
+        <h2 class="networking-section-title">
+          Suggestions for You
+        </h2>
+        <div class="networking-suggestions-list">
+          <article class="networking-suggestion">
+            <p class="networking-suggestion-name">
+              Jane Smith
+            </p>
+            <p class="networking-suggestion-text">
+              Co-Founder at ABC Inc.
+            </p>
+            <p class="networking-suggestion-text">
+              New York, NY
+            </p>
+            <button
+              class="btn btn--rounded btn--colored-dark btn--font-small networking-suggestion-button"
+              type="button"
+            >
+              Connect
+            </button>
+          </article>
+          <article class="networking-suggestion">
+            <p class="networking-suggestion-name">
+              John Doe
+            </p>
+            <p class="networking-suggestion-text">
+              Product Manager at XYZ Corp
+            </p>
+            <p class="networking-suggestion-text">
+              San Francisco, CA
+            </p>         
+            <button
+              class="btn btn--rounded btn--colored-dark btn--font-small networking-suggestion-button"
+              type="button"
+            >
+              Connect
+            </button>
+          </article>        
+          <article class="networking-suggestion">
+            <p class="networking-suggestion-name">
+              Alice Johnson
+            </p>          
+            <p class="networking-suggestion-text">
+              Senior Developer at Tech Solutions
+            </p>          
+            <p class="networking-suggestion-text">
+              Remote
+            </p>         
+            <button
+              class="btn btn--rounded btn--colored-dark btn--font-small networking-suggestion-button"
+              type="button"
+            >
+              Connect
+            </button>
+          </article>       
+          <article class="networking-suggestion">
+            <p class="networking-suggestion-name">
+              David Brown
+            </p>         
+            <p class="networking-suggestion-text">
+              Marketing Specialist at Brand Co
+            </p>         
+            <p class="networking-suggestion-text">
+              Chicago, IL
+            </p>          
+            <button
+              class="btn btn--rounded btn--colored-dark btn--font-small networking-suggestion-button"
+              type="button"
+            >
+              Connect
+            </button>
+          </article>       
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="mobile-footer mobile-only">
+    <section class="mobile-footer-container">
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/home.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          Home
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/network-hover.svg" 
+          alt="">
+        <p class="mobile-footer-text mobile-footer-text--active">
+          <a href="./networking.html">Networking</a>
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/briefcase.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          <a href="./job-opportunities.html">Job Portal</a>
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/profile.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          <a href="./home.html">Profile</a>
+        </p> 
+      </div>
+    </section>
+  </footer>
+
+  <script src="./js/data/networking-data.js"></script>
+  <script src="./js/pages/networking.js"></script>
+
+</body>
+</html>

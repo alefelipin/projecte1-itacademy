@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Wallpoet&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/pages/jobs.css">
+
+</head>
+<body class="page-job-opportunities">
+  <header class="mobile-header mobile-only">
+    <div class="mobile-header-container">
+      <div class="mobile-header-left">
+        <a href="./home.html" class="mobile-header-back">
+          <img
+            src="./src/assets/icons/arrow-left.svg"
+            alt="Go back"
+          >
+        </a>
+      </div>
+      <h1 class="mobile-header-title">
+        Job Portal
+      </h1>
+      <div class="mobile-header-right">
+        <img 
+          class="mobile-header-icon" 
+          src="./src/assets/icons/align-bottom.svg" 
+          alt=""
+        >
+        <img 
+          class="mobile-header-avatar" 
+          src="./src/assets/images/avatar.svg" 
+          alt="Profile picture"
+        >
+      </div> 
+    </div>
+    <form class="mobile-header-form">
+      <div class="mobile-header-field">
+        <img 
+          class="mobile-form-icon" 
+          src="./src/assets/icons/search.svg" 
+          alt=""
+        >
+        <input
+          class="mobile-header-input"
+          type="text" 
+          placeholder="Search alumni..." 
+          required
+        >
+      </div>
+    </form>
+  </header>
+  <header class="desktop-header desktop-only">
+    <div class="desktop-header-container">
+      <div class="desktop-header-logo">
+        <img
+          src="./src/assets/logos/logo-alumni.png"
+          alt=""
+        >
+      </div>
+      <h1 class="desktop-header-title">
+        Alumni Connect
+      </h1>
+      <nav class="desktop-header-nav" aria-label="Main navigation">
+        <ul class="desktop-header-nav-list">
+          <li>
+            <a class="desktop-header-nav-link" href="./home.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a 
+              class="desktop-header-nav-link" href="./networking.html">
+              Networking
+            </a>
+          </li>
+          <li>
+            <a class="desktop-header-nav-link desktop-header-nav-link--active" href="./job-opportunities.html">
+              Job Opportunities
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="desktop-header-actions">
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/search.svg"
+          alt="Search"
+        >
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/bell.svg"
+          alt="Notifications"
+        >
+        <img
+          class="desktop-header-icon"
+          src="./src/assets/icons/settings.svg"
+          alt="Settings"
+        >
+        <img
+          class="desktop-header-avatar"
+          src="./src/assets/images/avatar-jobs.svg"
+          alt="Profile picture"
+        >
+      </div>
+    </div>
+  </header>
+  <main class="job-opportunities-main">
+    <section class="job-opportunities-filters mobile-only">
+      <div class="job-opportunities-filter">
+        <img
+          class="job-opportunities-filter-icon"
+          src="./src/assets/icons/filter.svg"
+          alt=""
+        >
+        <select name="industry" id="select-industry-mobile">
+          <option value="" selected>Industry</option>
+          <option value="marketing">Marketing</option>
+          <option value="human resources">Human Resources</option>
+          <option value="software">IT / Software </option>
+          <option value="health">Health</option>
+        </select>
+      </div>
+      <div class="job-opportunities-filter">
+        <img
+          class="job-opportunities-filter-icon"
+          src="./src/assets/icons/filter.svg"
+          alt=""
+        >
+        <select name="experience" id="select-experience-mobile">
+          <option value="" selected>Experience Level</option>
+          <option value="none">No experience</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="back-end">Back-end</option>
+          <option value="front-end">Front-end</option>
+          <option value="full-stack">Full-stack</option>
+          
+        </select>
+      </div>
+    </section>
+    <section
+      id="jobs-mobile-container"
+      class="job-opportunities-main-container mobile-only" 
+      aria-label="Job Opportunities"
+    >
+      
+    </section >
+    <div>
+      <h2 class="job-opportunities-desktop-title desktop-only">
+        Jobs
+      </h2>
+    </div>
+    <section class="job-opportunities-filters desktop-only">
+      <div class="job-opportunities-filter">
+        <img
+          class="job-opportunities-filter-icon"
+          src="./src/assets/icons/filter.svg"
+          alt=""
+        >
+        <select name="industry" id="select-industry-desktop">
+          <option value="" selected>Industry</option>
+          <option value="marketing">Marketing</option>
+          <option value="human resources">Human Resources</option>
+          <option value="software">IT / Software </option>
+          <option value="health">Health</option>
+        </select>
+      </div>
+      <div class="job-opportunities-filter">
+        <img
+          class="job-opportunities-filter-icon"
+          src="./src/assets/icons/filter.svg"
+          alt=""
+        >
+        <select name="experience" id="select-experience-desktop">
+          <option value="" selected>Experience Level</option>
+          <option value="none">No experience</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="back-end">Back-end</option>
+          <option value="front-end">Front-end</option>
+          <option value="full-stack">Full-stack</option>
+          
+        </select>
+      </div>
+    </section>
+    <section class="job-opportunities-desktop desktop-only">
+      <div
+      id="jobs-desktop-container"
+      class="job-opportunities-desktop-grid"
+      >
+        
+      </div>   
+    </section>
+  </main>
+
+  <footer class="mobile-footer mobile-only">
+    <section class="mobile-footer-container">
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/home.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          Home
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/network.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          Networking
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/briefcase-active.svg" 
+          alt="">
+        <p class="mobile-footer-text  mobile-footer-text--active">
+          Job Portal
+        </p> 
+      </div>
+      <div class="mobile-footer-item">
+        <img 
+          class="mobile-footer-icon" 
+          src="./src/assets/icons/profile.svg" 
+          alt="">
+        <p class="mobile-footer-text">
+          Profile
+        </p> 
+      </div>
+    </section>
+  </footer>
+
+  <script src="./js/data/jobs-data.js"></script>
+  <script src="./js/pages/jobs.js"></script>
+
+
+</body>
+</html>
